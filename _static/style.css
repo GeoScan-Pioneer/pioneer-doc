@@ -1,0 +1,23 @@
+.wy-nav-content {
+    max-width: none;
+}
+.wy-side-nav-search {
+    background-color: #fed136;
+}
+
+.wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {
+    color: #000000;
+        font-size: 150%;
+}
+
+
+.wy-nav-top {
+    background: #fed136;
+    color: #000000;
+}
+
+
+.wy-nav-top a {
+    color: #000000;
+}
+
