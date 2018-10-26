@@ -12,7 +12,7 @@
 
 .. _модуль GPS ГЛОНАСС: ../../const/module/gps.html
 
-.. image:: /_static/images/trik_programm.png
+.. image:: /_static/images/trik_programm.PNG
 	:align: center
 
 Добавьте блоки "Рыскание" и "Светодиод", постарайтесь разнообразить условия вашей программы. 
