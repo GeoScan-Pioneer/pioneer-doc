@@ -19,9 +19,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'pioneer'
-copyright = '2018, r.kuznetskiy'
-author = 'r.kuznetskiy'
+project = 'Pioneer'
+copyright = '2018, R.Kuznetskiy'
+author = 'R.Kuznetskiy'
 
 # The short X.Y version
 version = ''
