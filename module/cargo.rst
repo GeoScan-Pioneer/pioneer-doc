@@ -14,89 +14,87 @@
 
     -- https://learnxinyminutes.com/docs/ru-ru/lua-ru/ ссылка для быстрого ознакомления с основами языка LUA
 
--- инициализируем управление модулем груза порт PC3 на плате версии 1.2
+    -- инициализируем управление модулем груза порт PC3 на плате версии 1.2
 
-local magneto = Gpio.new(Gpio.C, 3, Gpio.OUTPUT)
+    local magneto = Gpio.new(Gpio.C, 3, Gpio.OUTPUT)
 
--- инициализируем управление модулем груза порт PA1 на плате версии 1.1 (необходимо раскомментировать строчку ниже и закомментировать строчку выше)
+    -- инициализируем управление модулем груза порт PA1 на плате версии 1.1 (необходимо раскомментировать строчку ниже и закомментировать строчку выше)
 
--- local magneto = Gpio.new(Gpio.A, 1, Gpio.OUTPUT)
+    -- local magneto = Gpio.new(Gpio.A, 1, Gpio.OUTPUT)
 
--- задаем количество светодиодов (4 на базовой плате и еще 4 на модуле груза)
+    -- задаем количество светодиодов (4 на базовой плате и еще 4 на модуле груза)
 
-local led_number = 8
+    local led_number = 8
 
--- инициализируем светодиоды
+    -- инициализируем светодиоды
 
-local leds = Ledbar.new(led_number)
+    local leds = Ledbar.new(led_number)
 
-local rc = Sensors.rc
+    local rc = Sensors.rc
 
-local blink = 0
+    local blink = 0
 
-
-
-function callback(event)
-
-end
-
-
-
-
-
-local function changeColor(red, green, blue)
-
-    for i=0, led_number - 1, 1 do
-
-        leds:set(i, red, green, blue)
+    function callback(event)
 
     end
 
-end
 
 
 
-cargoTimer = Timer.new(0.1, function () -- создаем таймер, который будет вызывать нашу функцию 10 раз в секунуду
 
-    _, _, _, _, _, _, _, ch8 = rc() -- считываем сигнал с 8 канала на пульте, значение от -1 до 1
+    local function changeColor(red, green, blue)
 
-    if(ch8 < 0) then  -- если сигнал с пульта -1 (SWA вверх), то включаем
+        for i=0, led_number - 1, 1 do
 
-        magneto:reset()
-
-        changeColor(0, 1, 0) -- и сигнализируем об активации зеленым цветом
-
-    else if(ch8 > 0) then -- если сигнал с пульта 1 (SWA вниз), то выключаем
-
-        magneto:set()
-
-        changeColor(1, 0, 0) -- когда магнит отключен, светодиоды горят красным
-
-    else -- синий мигающий цвет светодиодов сигнализирует об отсутствии сигнала на восьмом канале
-
-        if(blink < 5) then
-
-            changeColor(0, 0, 1)
-
-            blink = blink + 1
-
-        else
-
-            changeColor(0, 0, 0)
-
-            blink = 0
+            leds:set(i, red, green, blue)
 
         end
 
     end
 
-end
 
-end)
 
--- запускаем таймер
+    cargoTimer = Timer.new(0.1, function () -- создаем таймер, который будет вызывать нашу функцию 10 раз в секунуду
 
-cargoTimer:start()
+        _, _, _, _, _, _, _, ch8 = rc() -- считываем сигнал с 8 канала на пульте, значение от -1 до 1
+
+        if(ch8 < 0) then  -- если сигнал с пульта -1 (SWA вверх), то включаем
+
+            magneto:reset()
+
+            changeColor(0, 1, 0) -- и сигнализируем об активации зеленым цветом
+
+        else if(ch8 > 0) then -- если сигнал с пульта 1 (SWA вниз), то выключаем
+
+            magneto:set()
+
+            changeColor(1, 0, 0) -- когда магнит отключен, светодиоды горят красным
+
+        else -- синий мигающий цвет светодиодов сигнализирует об отсутствии сигнала на восьмом канале
+
+            if(blink < 5) then
+
+                changeColor(0, 0, 1)
+
+               blink = blink + 1
+
+            else
+
+                changeColor(0, 0, 0)
+
+                blink = 0
+
+            end
+
+        end
+
+    end
+
+    end)
+
+     -- запускаем таймер
+
+    cargoTimer:start()
 
 Программу нужно `загрузить на "Пионер"`_. После загрузки вы сможете управлять работой магнита с помошью крайнего правого тумблера на пульте.
 
