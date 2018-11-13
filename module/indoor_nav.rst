@@ -16,5 +16,49 @@
 
 .. _Навигация в промещении: ../indoor_nav.html
 
+Полет в системе навигации может осуществляться как в ручном режиме, так и по заранее загруженной программе. Пример такой программы приведен ниже. ВЫполняя её, "Пионер" взлетает, набирает высоту 1.2 м, летит в угол полетной зоны с координатами (0:0), затем в точку с координатами (1:1) и приземляется. Чтобы `загрузить программу на "Пионер"`_, воспользуйтесь Pioneer Station.
+
+.. _загрузить программу на "Пионер": ../programming/pioneer_station/pioneer_station_upload.html
+
+
+
+::
+
+ -- переменная текущего состояния
+ local curr_state = "PREPARE_FLIGHT"
+
+  
+ -- таблица функций, вызываемых в зависимости от состояния
+ action = {
+    ["PREPARE_FLIGHT"] = function(x)
+            Timer.callLater(2, function () 
+            ap.push(Ev.MCE_TAKEOFF) -- через 2 секунды отправляем команду автопилоту на взлет
+            curr_state = "FLIGHT_TO_FIRST_POINT" -- переход в следующее состояние
+        end)
+    end,
+    ["FLIGHT_TO_FIRST_POINT"] = function (x) 
+            Timer.callLater(2, function ()
+            ap.goToLocalPoint(0, 0, 1.2) -- отправка команды автопилоту на полет к точке с координатами (0 м, 0 м, 1,2 м)
+            curr_state = "FLIGHT_TO_SECOND_POINT" -- переход в следующее состояние
+        end) 
+    end,
+    ["FLIGHT_TO_SECOND_POINT"] = function (x) 
+            Timer.callLater(2, function ()
+            ap.goToLocalPoint(1, 1, 1.2) -- отправка команды автопилоту на полет к точке с координатами (1 м, 1 м, 1,2 м)
+            curr_state = "PIONEER_LANDING" -- переход в следующее состояние
+        end)
+    end,
+    ["PIONEER_LANDING"] = function (x) 
+            Timer.callLater(2, function () 
+            ap.push(Ev.MCE_LANDING) -- отправка команды автопилоту на посадку
+        end)
+    end
+}
+ 
+
+ -- включаем светодиод (красный цвет)
+ changeColor(colors[1])
+ -- запускаем одноразовый таймер на 2 секунды, а когда он закончится, выполняем первую функцию из таблицы (подготовка к полету)
+ Timer.callLater(2, function () action[curr_state]() end)
 
    
