@@ -10,11 +10,20 @@
 
  
 Модуль OpenMV подключается к базовой плате "Пионера" посредством интерфейса UART. Для настройки соединения используйте следующий код:
+для "Пионера"
+
 ::
     -- инициализируем Uart интерфейс
     local uartNum = 4 -- номер Uart интерфейса (USART4)
     local baudRate = 9600 -- скорость передачи данных
     local stopBits = 1
     local parity = Uart.PARITY_NONE
-    local uart = Uart.new(uartNum, baudRate, parity, stopBits) -- создание протокола обмена
+    local uart = Uart.new(uartNum, baudRate, parity, stopBits) 
+    -- создание протокола обмена
+
+для камеры OpenMV
+
+::
+    uart = UART(3)[font=monospace][/font]
+    uart.init(9600, bits=8, parity=None, stop=1, timeout_char=1000)
 
