@@ -21,7 +21,7 @@
 
 project = 'Pioneer'
 copyright = '2018, Geoscan LTD'
-author = 'Geoscan'
+author = 'Geoscan LTD'
 
 # The short X.Y version
 version = ''
