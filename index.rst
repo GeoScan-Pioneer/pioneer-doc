@@ -58,7 +58,7 @@
    programming/programming
    indoor_nav
    FAQ
-  
+   changelog
 
 
 
