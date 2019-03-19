@@ -77,6 +77,13 @@ pygments_style = None
 #
 html_theme = 'sphinx_rtd_theme'
 
+html_theme_options = {'logo_only': True,}
+
+html_logo = "_static/_images/logo.png"
+html_favicon = "_static/_images/favicon.ico"
+html_show_sphinx = False
+
+
 def setup(app):
     app.add_stylesheet('style.css')
 
