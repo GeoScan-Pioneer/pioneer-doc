@@ -10,7 +10,7 @@
 
 .. _системы навигации в помещении: ../../indoor_nav.html
 
-.. _модуль GPS ГЛОНАСС: ../../const/module/gps.html
+.. _модуль GPS ГЛОНАСС: ../../module/gps.html
 
 .. image:: /_static/images/trik_programm.PNG
 	:align: center
