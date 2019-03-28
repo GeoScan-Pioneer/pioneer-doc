@@ -453,9 +453,11 @@ SPI
     local curr_point = 1
 
     local function nextPoint()
-        if(#points > curr_point) then
+        if(#points >= curr_point) then
             ap.goToLocalPoint(unpack(points[curr_point]))
             curr_point = curr_point + 1
+        else
+            ap.push(Ev.MCE_LANDING)
         end
     end
 
