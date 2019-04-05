@@ -40,7 +40,7 @@ release = '0.3'
 # ones.
 extensions = [
     'sphinx.ext.githubpages',
-    'rinoh.frontend.sphinx'
+
 ]
 
 # Add any paths that contain templates here, relative to this directory.
