@@ -10,9 +10,8 @@
 
 .. _скачать TRIK Studio: https://dl.geoscan.aero/pioneer/upload/TRIKStudio/trik-studio-offline-installer.exe
 
-Для синхронизации с "Пионером" вам понадобится `Pioneer Station`_. 
+Для синхронизации с "Пионером" вам понадобится :doc:`../pioneer_station/pioneer_station_main`. 
 
-.. _Pioneer Station: ../pioneer_station/pioneer_station_main.html
 
 .. toctree::
    :maxdepth: 2
