@@ -26,7 +26,7 @@ author = 'Geoscan LTD'
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '1.0'
+release = ''
 
 
 # -- General configuration ---------------------------------------------------
@@ -40,6 +40,8 @@ release = '1.0'
 # ones.
 extensions = [
     'sphinx.ext.githubpages',
+    'sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
 
 ]
 
@@ -86,7 +88,11 @@ def setup(app):
 # documentation.
 #
 #html_theme_options = {'logo_only': True,}
+html_theme_options = {'logo_only': True,}
 
+html_logo = "_static/images/logo.png"
+html_favicon = "_static/images/favicon.ico"
+html_show_sphinx = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -109,7 +115,7 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'pioneerdoc'
 
-
+latex_logo = "_static/images/logo.png"
 # -- Options for LaTeX output ------------------------------------------------
 
 latex_elements = {
@@ -147,7 +153,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'pioneer.tex', 'Инструкция Геоскан Пионер',
+    (master_doc, 'pioneer.tex', '',
      'Geoscan', 'manual'),
 ]
 
