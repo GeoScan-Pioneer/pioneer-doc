@@ -17,6 +17,7 @@
 
 .. image:: _static/images/pioneer.png
    :align: center
+   :width: 420
 
 С "Пионером" вы сможете:
 
