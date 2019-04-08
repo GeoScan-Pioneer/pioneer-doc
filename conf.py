@@ -83,6 +83,7 @@ html_theme = 'sphinx_rtd_theme'
 def setup(app):
     app.add_stylesheet('style.css')
 
+
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -154,7 +155,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'pioneer.tex', '',
-     'Geoscan', 'manual'),
+     '', 'manual'),
 ]
 
 
