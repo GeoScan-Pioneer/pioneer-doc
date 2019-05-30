@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Загрузка программы в «Пионер» &mdash; Документация Pioneer </title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/style.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../search.html" />
+    <link rel="next" title="Подключение по USB модему" href="pioneer_station_usb_modem.html" />
+    <link rel="prev" title="Редактор кода" href="pioneer_station_code_editor.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Содержание:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../const/const_main.html">Сборка «Пионера»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../settings/settings_main.html">Настройки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../flight/flight.html">Полет</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../module/module_main.html">Дополнительные модули</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../programming.html">Программирование</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../trik/trik_main.html">Визуальное программирование TRIK</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="pioneer_station_main.html">Pioneer Station</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pioneer_station_work.html">Работа с Pioneer station</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Загрузка программы в «Пионер»</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pioneer_station_usb_modem.html">Подключение по USB модему</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../lua/lua_main.html">Программирование на Lua</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../indoor_nav.html">Система навигации в помещении Геоскан Локус</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Pioneer</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../programming.html">Программирование</a> &raquo;</li>
+        
+          <li><a href="pioneer_station_main.html">Pioneer Station</a> &raquo;</li>
+        
+      <li>Загрузка программы в «Пионер»</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/programming/pioneer_station/pioneer_station_upload.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Загрузка программы в «Пионер»<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Имея код программы, созданный в TRIK Studio или написанный в Pioneer Station, можно приступить к его загрузке на квадрокоптер.
+Подключите «Пионер» к компьютеру USB кабелем и откройте нужную программу в Pioneer Station.</p>
+<p>В правом нижнем углу Pioneer Station выберите вариант подключения «По кабелю USB». В окне программы должны появиться текущие параметры «Пионера», углы наклона, напряжение питания и номер.</p>
+<img alt="../../_images/pioneer_station_connect.png" class="align-center" src="../../_images/pioneer_station_connect.png" />
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Попробуйте наклонять квадокоптер в разные стороны и убедитесь, что авиагоризонт корректно отображает его положение. В случае ошибки соединения проверьте соединение кабеля и версию прошивки в Pioneer station, при необходимости <a class="reference external" href="../../settings/firmware_upgrade.html">обновите</a> её.</p>
+</div>
+<p>Если программа изначально была создана в TRIK studio, нажмите кнопку «Загрузить программу на «Пионер»«. Текст программы должен появиться в окне Pioneer Station. Теперь нажмите кнопку «Загрузить».</p>
+<img alt="../../_images/pioneer_station_upload.png" class="align-center" src="../../_images/pioneer_station_upload.png" />
+<p>На плате «Пионера» должен несколько раз мигнуть светодиод «прием», а в программе - появиться уведомление об успешной загрузке.</p>
+<p>Запустить выполенение программы можно разными способами. Если программа не предполагает полета, не отключая кабель от квадрокоптера нажмите кнопку «Старт прогр.» в Pioneer Station, и через пять секунд сможете наблюдать результат её работы. Питания от USB достаточно для работы светодиодов и некоторых <a class="reference external" href="../../module/module_main.html">дополнительных модулей</a>.</p>
+<hr class="docutils" />
+<p><strong>При более сложных сценариях</strong>: отключите квадрокоптер от компьютера, поместите его в комнату или площадку, достаточно просторную для выполнения задач, и подключите аккумулятор. После звукового сигнала дождитесь, когда перестанут мигать основные светодиоды на плате, и нажмите кнопку «Старт» и отойдите от квадрокоптера. Через пять секунд начнется выполнение программы.</p>
+<div class="admonition attention">
+<p class="first admonition-title">Внимание</p>
+<p class="last">Для безопасного полета, на случай нештатной ситуации держите в руках пульт, связанный с вашим «Пионером». Настройте на пульте режим автоматического полёта. Для этого переведите рычаг B в нижнее положение. Рычаги А, С, D – в верхнем положении. Для экстренного завершения программы переведите рычаг В в верхнее положение, управление квадрокоптером перейдет к вам.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pioneer_station_usb_modem.html" class="btn btn-neutral float-right" title="Подключение по USB модему" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pioneer_station_code_editor.html" class="btn btn-neutral" title="Редактор кода" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Geoscan LTD
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

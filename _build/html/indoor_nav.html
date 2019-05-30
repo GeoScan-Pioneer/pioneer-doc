@@ -1,0 +1,285 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Система навигации в помещении Геоскан Локус &mdash; Документация Pioneer </title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="FAQ" href="FAQ.html" />
+    <link rel="prev" title="Lua документация по API" href="programming/lua/lua.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Содержание:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="const/const_main.html">Сборка «Пионера»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings/settings_main.html">Настройки</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flight/flight.html">Полет</a></li>
+<li class="toctree-l1"><a class="reference internal" href="module/module_main.html">Дополнительные модули</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming/programming.html">Программирование</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Система навигации в помещении Геоскан Локус</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">Установка полетной зоны</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Обновление прошивки системы навигации</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Pioneer</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Система навигации в помещении Геоскан Локус</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/indoor_nav.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Система навигации в помещении Геоскан Локус<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Система позволяет создать контролируемую полетную зону с максимальным размером 10х10х4 метров. Она обеспечивает точное и безопасное управление квадрокоптером независимо от других систем навигации (GPS/ГЛОНАСС)</p>
+<img alt="_images/indor_navigation.png" class="align-center" src="_images/indor_navigation.png" />
+<p><a class="reference external" href="https://dl.geoscan.aero/pioneer/upload/Docs/User_manual_Locus.pdf">Скачать pdf инструкцию по настройке системы навигации</a></p>
+<p>Комплект системы:</p>
+<ul class="simple">
+<li>блок управления;</li>
+<li>4 ультразвуковых излучателя;</li>
+<li>бортовой модуль;</li>
+<li>соединительные провода;</li>
+<li>программа LPS для синхронизации с компьютером (<a class="reference external" href="https://dl.geoscan.aero/pioneer/upload/LPS/Geoscan_LPS.exe">скачать последнюю версию</a> );</li>
+</ul>
+<div class="section" id="id3">
+<h2>Установка полетной зоны<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<img alt="_images/nav_system.PNG" class="align-center" src="_images/nav_system.PNG" />
+<p>Установите ультразвуковые излучатели в будущей зоне полета. Расположите их в вершинах полетной зоны так, чтобы они были направлены к ее центру. При этом:</p>
+<ul class="simple">
+<li>минимальная высота установки излучателей - 2 м</li>
+<li>минимальная дистанция между излучателями  - 3 м</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Система будет работать точнее, если на полу в помещении будет мягкое покрытие (ковер, ковролин).</p>
+</div>
+<p>Проводами соедините каждый излучатель с блоком управления. Следите, чтобы не перепутать провода и разъемы, они подписаны. Блок управления лучше расположить за пределами полетной зоны. Его можно подключить к ноутбуку или компьютеру через порт USB. Блок управления и бортовой модуль общаются по радиоканалу.</p>
+<p>Рулеткой или дальномером измерьте расстояния между излучателями и высоту их установки. Удобнее всего задавать полетную зону в форме квадрата или прямоугольника. По результаам измерений формируется координатная сетка полетной зоны.</p>
+<img alt="_images/indoor_prog.png" class="align-center" src="_images/indoor_prog.png" />
+<p>На рисунке показан интерфейс программы LPS, которая используется для настройки и работы с системой позиционирования. При первом запуске программы заполните пустые поля координат для маяков. Как это сделать:</p>
+<ul class="simple">
+<li>Расстояние (в метрах) между излучателем 1 и 2 поделите на 2. Полученное значение введите в поле X со знаком «минус» для маяков №2 и №3 и без знака «минус» для маяка №1 и 4.</li>
+<li>Расстояние между излучателем 2 и 3 также поделите на 2 и введите значение в поле Y со знаком «минус» для маяков №3 и №4 и без знака «минус» для маяков №1 и №2.</li>
+<li>В поле Z введите высоту каждого излучателя над уровнем пола.</li>
+</ul>
+<p>После ввода координат полетная зона сформирована и отображается в правом окне программы зеленой линией. По умолчанию углы полетной зоны отстоят от излучателя на 1 м.</p>
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Параметры полетной зоны также можно задать напрямую на блоке управления</p>
+</div>
+<p>Нажмите кнопку на плате управления, чтобы включить систему. После этого должен загореться белый светодиод «питание» и зеленый «статус». Если этого не произошло, проверьте заряд аккумулятора.</p>
+<p>Вверху встроенного экрана отображается время с момента включения и текущий уровень напряжения аккумулятора. При падении напряжения ниже 3 В начнет мигать светодиод «статус», сообщая о необходимости подзаряда. В этом случае подключите плату через порт micro-usb к компьютеру или зарядному устройству (output 5В 2А).</p>
+<p>На встроенном экране координаты отображаются так же, как в интерфейсе программы LPS.</p>
+<img alt="_images/indoor_board_int1.PNG" class="align-center" src="_images/indoor_board_int1.PNG" />
+<p>Чтобы изменить любой из параметров системы, выберите его поворотом селектора, а затем надавите на него. После коррекции (также поворотом) нажмите на селектор второй раз, чтобы подтвердить изменения и вернуться в меню.</p>
+<p>На втором экране меню можно вручную настроить отступы от границы полетного пространства или включить режим «Auto» - тогда все настроится автоматически. Там же можно отключать ограничения полетной зоны.</p>
+<img alt="_images/indoor_board_int2.PNG" class="align-center" src="_images/indoor_board_int2.PNG" />
+<div class="admonition note">
+<p class="first admonition-title">Примечание</p>
+<p class="last">Для работы системы подключение к компьютеру необязательно. Достаточно включить блок управления и расположить «Пионер» с установенным бортовым модулем в пределах полетной зоны.</p>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>Обновление прошивки системы навигации<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Чтобы обновить прошивку, вам понадобится компьютер с установленной программой Pioneer Station. Запустите её, выберите в меню пункт «обновление прошивки» и следуйте указаниям помощника.
+Нажмите и удерживайте кнопку «меню» на плате, и не отпуская её включите блок управления. Так он перейдет в режим обновления прошивки. Теперь подключите блок управления системы навигации к компьютеру кабелем USB. При выборе устройства, поставьте галочку напротив модуля BeaconUSNav.</p>
+<img alt="_images/usnav_upd.png" class="align-center" src="_images/usnav_upd.png" />
+<p>Рекомендуется выбирать встроенную прошивку, так вы установите последнюю стабильную версию.
+Процесс может занять до 5 минут, не отключайте блок управления до окончания прошивки.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="FAQ.html" class="btn btn-neutral float-right" title="FAQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="programming/lua/lua.html" class="btn btn-neutral" title="Lua документация по API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Geoscan LTD
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
