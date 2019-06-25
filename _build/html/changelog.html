@@ -93,8 +93,9 @@
 <li class="toctree-l1"><a class="reference internal" href="indoor_nav.html">Система навигации в помещении Геоскан Локус</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">11/02/2019</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">1/02/2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">20/06/2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">11/02/2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">1/02/2019</a></li>
 </ul>
 </li>
 </ul>
@@ -164,9 +165,37 @@
   <div class="section" id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Ссылка на этот заголовок">¶</a></h1>
 <div class="section" id="id1">
-<h2>11/02/2019<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<h2>20/06/2019<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
 <ol class="arabic simple">
-<li>Обновлена Pioneer Station (<a class="reference external" href="https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe">Версия 1.9.1</a>)</li>
+<li>Обновлена Pioneer Station (<a class="reference external" href="https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe">Версия 1.10.0</a>)</li>
+</ol>
+<ul class="simple">
+<li>Добавлена поддержка нового протокола (1.5) для работы с новой версией автопилота</li>
+<li>Добавлена возможность скачивать логи двумя способами:</li>
+<li><ul class="first">
+<li>Через Payload (старый медленный вариант), требуется бутлоадер с поддержкой возможности скачать лог</li>
+<li>Через Plazlink (новый быстрый метод), требует лишь наличия установленной прошивки с версией протокола 1.5</li>
+</ul>
+</li>
+<li>Обновлены примеры скриптов LUA для программирования Пионера, оптимизирована структура и комментарии</li>
+<li>Добавлены новые более сложные примеры для составления полетного задания и работы с модулем LED</li>
+<li>Добавлена возможность просматривать логи с автопилота (в МЕНЮ в разделе “Работа с логами”)</li>
+</ul>
+<ol class="arabic simple" start="2">
+<li>Обновлена прошивка автопилота (Версия 1.5.6173)</li>
+</ol>
+<ul class="simple">
+<li>Обновлен протокол до версии 1.5</li>
+<li>Добавлена возможность скачивать лог</li>
+<li>Обновлен алгоритм взлета</li>
+<li>Исправлен баг с генерацией 2-х событий во время взлета, теперь генерируется только одно - <strong>Ev.TAKEOFF_COMPLETE</strong>. Событие Ev.ALTITUDE_REACHED более не используется</li>
+<li>Добавлена проверка старта двигателей при полете по программе</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>11/02/2019<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Обновлена Pioneer Station (<a class="reference external" href="https://dl.geoscan.aero/pioneer/upload/GCS/archive/1.9.1/GEOSCAN_Pioneer_Station.exe">Версия 1.9.1</a>)</li>
 </ol>
 <ul class="simple">
 <li>Исправлено отображение кода и телеметрии при изменении окна программы</li>
@@ -175,8 +204,8 @@
 <li>Добавлена ссылка на Changelog в меню-документация</li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h2>1/02/2019<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<div class="section" id="id5">
+<h2>1/02/2019<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
 <ol class="arabic simple">
 <li>Обновлена Pioneer Station(<a class="reference external" href="https://dl.geoscan.aero/pioneer/upload/GCS/archive/1.9.0/GEOSCAN_Pioneer_Station.exe">Версия 1.9.0</a>)</li>
 </ol>

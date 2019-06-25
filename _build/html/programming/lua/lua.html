@@ -886,7 +886,7 @@
 <tr class="row-odd"><td>COPTER_LANDED</td>
 <td>Коптер совершил посадку</td>
 </tr>
-<tr class="row-even"><td>ALTITUDE_REACHED</td>
+<tr class="row-even"><td>TAKEOFF_COMPLETE</td>
 <td>Коптер достиг высоты взлета</td>
 </tr>
 <tr class="row-odd"><td>POINT_REACHED</td>
@@ -915,6 +915,7 @@
 </tr>
 </tbody>
 </table>
+<p>„*“ событие Ev.ALTITUDE_REACHED ( коптер достиг высоты взлёта) начиная с версии АП 1.5.6173 более не используется.</p>
 </div>
 <div class="section" id="example">
 <span id="id6"></span><h1>Пример скрипта<a class="headerlink" href="#example" title="Ссылка на этот заголовок">¶</a></h1>
@@ -939,7 +940,7 @@
 <span class="kr">end</span>
 
 <span class="kr">function</span> <span class="nf">callback</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
-    <span class="kr">if</span><span class="p">(</span><span class="n">event</span> <span class="o">==</span> <span class="n">Ev</span><span class="p">.</span><span class="n">ALTITUDE_REACHED</span><span class="p">)</span> <span class="kr">then</span>
+    <span class="kr">if</span><span class="p">(</span><span class="n">event</span> <span class="o">==</span> <span class="n">Ev</span><span class="p">.</span><span class="n">TAKEOFF_COMPLETE</span><span class="p">)</span> <span class="kr">then</span>
         <span class="n">nextPoint</span><span class="p">()</span>
     <span class="kr">end</span>
     <span class="kr">if</span><span class="p">(</span><span class="n">event</span> <span class="o">==</span> <span class="n">Ev</span><span class="p">.</span><span class="n">POINT_REACHED</span><span class="p">)</span> <span class="kr">then</span>
