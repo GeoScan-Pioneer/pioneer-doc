@@ -24,12 +24,14 @@ Pioneer Station
 
 .. _скачать Pioneer station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe
 
-Если вы используете Linux, то скачайте и распакуйте `архив PioneerStationLinux64`_
+.. note::
+	Если программа не запускается попробуйте `скачать 32bit версию`_, распаковать архив и запустить run.bat.
+
+
+Если вы используете ОС Linux, скачайте и распакуйте `архив PioneerStationLinux64`_
 
 .. _архив PioneerStationLinux64: https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationLinux64.zip
 
-.. note::
-	Если программа не запускается попробуйте `скачать 32bit версию`_, распаковать архив и запустить run.bat.
 
 .. _скачать 32bit версию: https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip
 
