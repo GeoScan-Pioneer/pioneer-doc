@@ -116,7 +116,7 @@ html_static_path = ['_static']
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'pioneerdoc'
 
-latex_logo = "_static/images/logo.png"
+latex_logo = "_static/images/logo_latex.png"
 # -- Options for LaTeX output ------------------------------------------------
 
 latex_elements = {
