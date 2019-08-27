@@ -21,3 +21,5 @@ FAQ
 .. _драйвер виртуального порта: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 
 **Пустое окно при открытии вкладки параметров из файла в Pioneer Station** - Закройте программу и запустите файл run_extra.bat из папки, в которой установлена Pioneer Station.
+
+**Если коптер ведёт себя нестабильно при полёте по программе** - в параметрах автопилота уменьшите значение Copter_pos_aMax и сохраните изменения.
