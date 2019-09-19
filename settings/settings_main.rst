@@ -14,6 +14,7 @@
 
 .. _настроить пульт: rc_setting.html
 
+В разделе :doc:`logs` описано как просматривать данные с "черного ящика" квадрокоптера после завершения полёта.
 
 
 .. toctree::
@@ -24,3 +25,4 @@
    rc_setting
    rc_connection
    autopilot_parameters
+   logs
