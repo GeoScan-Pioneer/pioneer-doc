@@ -17,46 +17,48 @@
 
 ::
 
-    -- https://learnxinyminutes.com/docs/ru-ru/lua-ru/ ссылка для быстрого ознакомления с основами языка LUA
-    -- инициализируем управление модулем груза порт PC3 на плате версии 1.2
-    local magneto = Gpio.new(Gpio.C, 3, Gpio.OUTPUT)
-    -- инициализируем управление модулем груза порт PA1 на плате версии 1.1 (необходимо раскомментировать строчку ниже и закомментировать строчку выше)
-    -- local magneto = Gpio.new(Gpio.A, 1, Gpio.OUTPUT)
-    -- задаем количество светодиодов (4 на базовой плате и еще 4 на модуле груза)
-    local led_number = 8
-    -- инициализируем светодиоды
-    local leds = Ledbar.new(led_number)
-    local rc = Sensors.rc
-    local blink = 0
+    -- Создание порта управления магнитом - порт PC3 на плате версии 1.2
+    local magnet = Gpio.new(Gpio.C, 3, Gpio.OUTPUT)
+    -- Создание порта управления магнитом - порт PA1 на плате версии 1.1 (    необходимо раскомментировать строчку ниже и закомментировать строчку     выше)
+    -- local magnet = Gpio.new(Gpio.A, 1, Gpio.OUTPUT)
+    
+    -- Количество светодиодов (4 на базовой плате и еще 4 на модуле груза)
+    local led_number = 8 
+    -- Создание порта управления светодиодами
+    local leds = Ledbar.new(led_number) 
+    -- Состояние магнита (изначально он находится во включенном состоянии)
+    local magnet_state = true
+    
+    -- Функция, устанавливающая цвет светодиодов в зависимости от состояния     магнита
+    local function setLed(state)
+        if (state == true) then
+            color = {1,1,1}                  -- Если магнит включен, то     белый цвет
+        else
+            color = {0,0,0}                  -- Если магнит выключен, то     черный (светодиоды не горят)
+        end
+        for i = 4, led_number - 1, 1 do      -- Для каждого из 4     светодиодов задаем цвет
+            leds:set(i, table.unpack(color)) 
+        end
+    end
+    
+    -- Функция переключения магнита
+    local function toggleMagnet()
+        if (magnet_state == true) then  -- Если магнит включен, то     выключаем его
+            magnet:reset()
+        else                            -- Если выключен, то включаем
+            magnet:set()
+        end
+        magnet_state = not magnet_state -- Инвертируем переменную состояния
+    end
+    
+    -- Обязательная функция обработки событий
     function callback(event)
     end
     
-    -- функция смены цвета светодиодов
-    local function changeColor(red, green, blue)
-        for i=0, led_number - 1, 1 do
-            leds:set(i, red, green, blue)
-        end
-    end
-
-    cargoTimer = Timer.new(0.1, function () -- создаем таймер, который будет вызывать нашу функцию 10 раз в секунуду
-        _, _, _, _, _, _, _, ch8 = rc() -- считываем сигнал с 8 канала на пульте, значение от -1 до 1
-        if(ch8 < 0) then  -- если сигнал с пульта -1 (SWA вверх), то включаем
-            magneto:set()
-            changeColor(0, 1, 0) -- и сигнализируем об активации зеленым цветом
-        else if(ch8 > 0) then -- если сигнал с пульта 1 (SWA вниз), то выключаем
-            magneto:reset()
-            changeColor(1, 0, 0) -- когда магнит отключен, светодиоды горят красным
-        else -- синий мигающий цвет светодиодов сигнализирует об отсутствии сигнала на восьмом канале
-            if(blink < 5) then
-                changeColor(0, 0, 1)
-               blink = blink + 1
-            else
-                changeColor(0, 0, 0)
-                blink = 0
-            end
-        end
-    end
-
+    -- Создание таймера, вызывающего функцию каждую секунуду
+    cargoTimer = Timer.new(1, function ()
+        toggleMagnet()
+        setLed(magnet_state)
     end)
-     -- запускаем таймер
+    -- Запуск таймера
     cargoTimer:start()
