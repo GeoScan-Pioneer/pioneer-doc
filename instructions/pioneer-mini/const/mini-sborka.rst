@@ -81,7 +81,7 @@
 
 
 
-.. |mini-sborka-05-props| image:: ../media/mini-sborka-05-props.png
+.. |mini-sborka-05-props| image:: ../media/mini-sborka-05-props.PNG
    :scale: 50%
 
 .. |mini-sborka-05-prop| image:: ../media/mini-sborka-05-prop.png
