@@ -55,7 +55,7 @@
 
 **Шаг 4**
 
-.. figure:: ../media/mini-sborka-04.png
+.. figure:: ../media/mini-sborka-04.PNG
    :align: center
    :scale: 100%
 
@@ -124,5 +124,5 @@
 .. |motorcolour| image:: ../media/mini-sborka-motor-colour-01-v2.png
    :scale: 90%
 
-.. |motorstep1| image:: ../media/mini-sborka-motor-01.png
+.. |motorstep1| image:: ../media/mini-sborka-motor-01.PNG
    :scale: 50%
