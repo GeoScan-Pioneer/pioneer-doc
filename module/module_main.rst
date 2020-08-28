@@ -40,4 +40,5 @@
    camera
    fpv
    indoor_nav
+   indoor_nav_lokus
    
