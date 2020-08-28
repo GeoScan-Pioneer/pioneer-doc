@@ -40,7 +40,7 @@
 
 **Шаг 3**
 
-.. figure:: ../media/mini-sborka-03.png
+.. figure:: ../media/mini-sborka-03.PNG
    :align: center
    :scale: 50%
 
