@@ -1,12 +1,13 @@
 Мобильное приложение Geoscan Jump
 =================================
 
-В ручном режиме, управление квадрокоптером осуществляется с помощью мобильного приложения для смартфонов `"Geoscan Jump"`_. Перед началом работы загрузите актуальную версию с `сайта компании “Геоскан”`_ или из Google Play.
+В ручном режиме, управление квадрокоптером осуществляется с помощью мобильного приложения для смартфонов `"Geoscan Jump"`_. Перед началом работы загрузите актуальную версию с `сайта компании “Геоскан”`_ или из `Google Play`_.
 
-.. _"Geoscan Jump": https://download.geoscan.aero/pioneer/upload/GeoscanJump/geoscan_jump_app.apk
+.. _"Geoscan Jump": https://play.google.com/store/apps/details?id=com.malinowski.quadro&hl=ru
 
 .. _сайта компании “Геоскан”: https://www.geoscan.aero/ru/products/pioneer/mini#pills-download
 
+.. _Google Play: https://play.google.com/store/apps/details?id=com.malinowski.quadro&hl=ru
 
 .. figure:: media/qr-code-mini-jump.gif
    :align: center
