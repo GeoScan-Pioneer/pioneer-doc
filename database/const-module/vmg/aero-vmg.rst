@@ -693,7 +693,7 @@ Atmel, Silabs или ARM Cortex. Разные микроконтроллеры �
 |image17|\ |image18|
 
 Ссылка:
-`*https://youtu.be/7N9CHEF2214* <https://youtu.be/7N9CHEF2214>`__
+`https://youtu.be/7N9CHEF2214 <https://youtu.be/7N9CHEF2214>`__
 
 Принцип работы коллекторного двигателя 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -701,46 +701,46 @@ Atmel, Silabs или ARM Cortex. Разные микроконтроллеры �
 |image19|\ |image20|
 
 Ссылка:
-`*https://youtu.be/S6YKqv-iP0g* <https://youtu.be/S6YKqv-iP0g>`__
+`https://youtu.be/S6YKqv-iP0g <https://youtu.be/S6YKqv-iP0g>`__
 
 Список использованных источников
 --------------------------------
 
-1. Как выбрать регулятор скорости для гоночного квадрокоптера
+#. Как выбрать регулятор скорости для гоночного квадрокоптера
 
-   `*https://blog.rcdetails.info/kak-vybrat-regulyator-hoda-dlya-gonochnogo-kvadrokoptera/* <https://blog.rcdetails.info/kak-vybrat-regulyator-hoda-dlya-gonochnogo-kvadrokoptera/>`__
+   `https://blog.rcdetails.info/kak-vybrat-regulyator-hoda-dlya-gonochnogo-kvadrokoptera/ <https://blog.rcdetails.info/kak-vybrat-regulyator-hoda-dlya-gonochnogo-kvadrokoptera/>`__
 
-1. Аэродинамика самолёта
+#. Аэродинамика самолёта
 
-   `*https://vzletim.ru/upload/iblock/572/aerodynamics03.pdf* <https://vzletim.ru/upload/iblock/572/aerodynamics03.pdf>`__
+   `https://vzletim.ru/upload/iblock/572/aerodynamics03.pdf <https://vzletim.ru/upload/iblock/572/aerodynamics03.pdf>`__
 
-2. Аэродинамика воздушного винта
+#. Аэродинамика воздушного винта
 
-   `*http://avia-simply.ru/vozdushnij-vint/* <http://avia-simply.ru/vozdushnij-vint/>`__
+   `http://avia-simply.ru/vozdushnij-vint/ <http://avia-simply.ru/vozdushnij-vint/>`__
 
-3. В чём разница между коллекторными и бесколлекторными двигателями
+#. В чём разница между коллекторными и бесколлекторными двигателями
 
-   `*https://dronomania.ru/faq/kollektornyj-i-beskollektornyj.html* <https://dronomania.ru/faq/kollektornyj-i-beskollektornyj.html>`__
+   `https://dronomania.ru/faq/kollektornyj-i-beskollektornyj.html <https://dronomania.ru/faq/kollektornyj-i-beskollektornyj.html>`__
 
-4. Отличия коллекторных и бесколлекторных моторов
+#. Отличия коллекторных и бесколлекторных моторов
 
-   `*http://www.rc-club.by/forum/threads/1626/* <http://www.rc-club.by/forum/threads/1626/>`__
+   `http://www.rc-club.by/forum/threads/1626/ <http://www.rc-club.by/forum/threads/1626/>`__
 
-5. Пропеллеры для квадрокоптера: виды, использование и как выбрать
+#. Пропеллеры для квадрокоптера: виды, использование и как выбрать
 
-   `*https://profpv.ru/propellery-dlya-kvadrokoptera/* <https://profpv.ru/propellery-dlya-kvadrokoptera/>`__
+   `https://profpv.ru/propellery-dlya-kvadrokoptera/ <https://profpv.ru/propellery-dlya-kvadrokoptera/>`__
 
-6. Пропеллеры для квадрокоптера – основные параметры и как подобрать
+#. Пропеллеры для квадрокоптера – основные параметры и как подобрать
 
-   `*https://drongeek.ru/profi/propellery-dlya-kvadrokoptera* <https://drongeek.ru/profi/propellery-dlya-kvadrokoptera>`__
+   `https://drongeek.ru/profi/propellery-dlya-kvadrokoptera <https://drongeek.ru/profi/propellery-dlya-kvadrokoptera>`__
 
-7. Закон Бернулли
+#. Закон Бернулли
 
-   `*https://ru.wikipedia.org/wiki/Закон\_Бернулли* <https://ru.wikipedia.org/wiki/Закон_Бернулли>`__
+   `https://ru.wikipedia.org/wiki/Закон\_Бернулли <https://ru.wikipedia.org/wiki/Закон_Бернулли>`__
 
-8. Подъёмная сила крыла
+#. Подъёмная сила крыла
 
-   `*https://clstunt.ru/index.php/tekhnologii/37-slovar-terminov/313-pod-emnaya-sila-kryla* <https://clstunt.ru/index.php/tekhnologii/37-slovar-terminov/313-pod-emnaya-sila-kryla>`__
+   `https://clstunt.ru/index.php/tekhnologii/37-slovar-terminov/313-pod-emnaya-sila-kryla <https://clstunt.ru/index.php/tekhnologii/37-slovar-terminov/313-pod-emnaya-sila-kryla>`__
 
 .. |image0| image:: media/image1.jpeg
    :width: 6.49653in
