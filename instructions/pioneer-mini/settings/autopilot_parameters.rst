@@ -39,7 +39,7 @@
 
 1) Нажмите кнопку "Открыть из файла" |upload|
 
-2) После чего в папке с установленным Pioneer Station, откройте папку "Firmware", затем папку "Properties" после чего выберете файл *Pioneer-mini-release-1.0.0001.properties* нажмите "Открыть".
+2) После чего в папке с установленным Pioneer Station, откройте папку "Firmware", затем папку "Properties" после чего выберите файл *Pioneer-mini-release-1.0.0001.properties* нажмите "Открыть".
 
 .. figure:: media/firmware-prop.PNG
    :align: center
