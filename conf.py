@@ -24,9 +24,9 @@ copyright = '2020, Geoscan LTD'
 author = 'Geoscan LTD'
 
 # The short X.Y version
-version = ''
+version = '2.1'
 # The full version, including alpha/beta/rc tags
-release = ''
+release = 'Mini-update'
 
 
 # -- General configuration ---------------------------------------------------
