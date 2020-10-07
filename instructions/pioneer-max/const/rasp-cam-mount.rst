@@ -1,7 +1,7 @@
 Установка старого кроншейна Raspberry Camera
 ============================================
 
-.. figure:: Rasp Camera.png
+.. figure:: RaspCamera.png
    :align: center
    :scale: 70%
 
