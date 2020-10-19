@@ -69,6 +69,7 @@
    module/module_main
    programming/programming
    database/main-database
+   downloads/download-main
    learning-cases/main-cases
    FAQ
    changelog
