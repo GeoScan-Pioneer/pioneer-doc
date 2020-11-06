@@ -85,21 +85,23 @@ Software
 
 **Стабильные**
 
-*   :download:`Параметры АП Пионер Мини 1.0.0003<files/properties/Pioneer-mini-release-1.0.0003.properties>`
+*   :download:`Параметры АП Пионер Мини 1.0.0007<files/properties/Pioneer-mini-1.0.0007.properties>`
+
+Для корректной работой с новой версией прошивки ESP 32
 
 **Устаревшие**
+
+*   :download:`Параметры АП Пионер Мини 1.0.0003<files/properties/Pioneer-mini-release-1.0.0003.properties>`
 
 *   :download:`Параметры АП Пионер Мини 1.0.0001<files/properties/Pioneer-mini-release-1.0.0001.properties>`
 
 *   :download:`Параметры АП Пионер Мини 1.0.0002<files/properties/Pioneer-mini-release-1.0.0002.properties>`
 
-**Тестовые**
-
 *   :download:`Параметры АП Пионер Мини 1.0.0004<files/properties/Pioneer-mini-test-1.0.0004.properties>`
-
 
 Изменены параметры АП влияющие на отключение моторов.
 
+**Тестовые**
 
 
 

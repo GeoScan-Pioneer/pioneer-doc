@@ -38,7 +38,7 @@
 Чтобы  загрузить параметры "Пионер Мини":
 
 1) Скачайте  файл параметров с установленным Pioneer Station, в папку Firmware/Properties
-   :download:`Файл параметров для Pioneer Mini Pioneer-mini-release-1.0.0003.properties <Pioneer-mini-release-1.0.0003.properties>`
+   :download:`файл параметров АП версии 0007 <Pioneer-mini-1.0.0007.properties>`
 
 2) Нажмите кнопку "Открыть из файла" |upload|
 
