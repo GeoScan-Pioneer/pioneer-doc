@@ -27,6 +27,7 @@
    :caption: Содержание:
 
    firmware_upgrade
+   esp32-update
    autopilot_parameters
    logs
 
