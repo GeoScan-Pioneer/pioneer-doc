@@ -123,7 +123,7 @@
 
 Ознакомьтесь с данной формой, в ней есть рекомендации по первым полетам и сбор обратной связи.
 
-`Форма обратной связи <https://docs.google.com/forms/d/e/1FAIpQLSccfMsd65oOkNdmexjLSfRZXtvmkheheCliI3HNNpzsd-UzIg/viewform?usp=sf_link>`__
+`Форма обратной связи обновления 0.9.11 "Поликарпов" <https://forms.gle/gM1mquuamwUDrqLV6>`__
 
 
 
