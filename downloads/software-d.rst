@@ -41,10 +41,11 @@ Software
 
 **Стабильные**
 
-*   :download:`Стабильная прошивка для Пионер Мини 1.6.7011<files/firmware/pioneer_mini_V1_1-boot-pioneer-1.6.7011.bin>`
-
+*   :download:`Актуальная прошивка автопилота для Пионер Мини 1.6.7257 <files/firmware/pioneer-mini_mini-v10-boot_gs_dev-1.6.7257-bbf20830e.bin>`
 
 **Устаревшие**
+
+*   :download:`Стабильная прошивка для Пионер Мини 1.6.7011<files/firmware/pioneer_mini_V1_1-boot-pioneer-1.6.7011.bin>`
 
 *   :download:`Прошивка для Пионер Мини 1.6.7006<files/firmware/pioneer-mini_mini-v10-boot_gs_dev-1.6.7006-2fdc3e6fe.bin>`
 
