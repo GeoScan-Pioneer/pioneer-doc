@@ -13,7 +13,7 @@
 
 .. figure:: media/accel.PNG
    :align: center
-   :scale: 50%
+   :scale: 100%
 
 Так как в Pioneer Station на данный момент имеются картинки со стандартным Пионером. Изображения с Пионер Мини, представленные ниже должны вам помочь.
 
@@ -29,7 +29,7 @@
 
 .. figure:: media/mini-z-up.png
    :align: center
-   :scale: 50%
+   :scale: 25%
 
 **Шаг 2**
 
@@ -39,7 +39,7 @@
 
 .. figure:: media/mini-z-down.png
    :align: center
-   :scale: 50%
+   :scale: 25%
 
 **Шаг 3**
 
@@ -49,7 +49,7 @@
 
 .. figure:: media/mini-y-up.png
    :align: center
-   :scale: 50%
+   :scale: 25%
 
 **Шаг 1**
 
@@ -59,7 +59,7 @@
 
 .. figure:: media/mini-y-down.png
    :align: center
-   :scale: 50%
+   :scale: 25%
 
 **Шаг 5**
 
@@ -69,7 +69,7 @@
 
 .. figure:: media/mini-x-up.png
    :align: center
-   :scale: 50%
+   :scale: 25%
 
 **Шаг 6**
 
@@ -79,4 +79,4 @@
 
 .. figure:: media/mini-x-down.png
    :align: center
-   :scale: 50%
+   :scale: 25%
