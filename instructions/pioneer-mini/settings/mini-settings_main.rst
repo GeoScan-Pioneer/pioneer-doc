@@ -36,6 +36,7 @@
    esp32-update
    autopilot_parameters
    logs
+   accel-mini
 
 
 
