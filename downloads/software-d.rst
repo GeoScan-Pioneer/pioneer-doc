@@ -60,7 +60,11 @@ Software
 Прошивка ESP32 для "Пионер Мини"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+**Устаревшие**
+
 *   :download:`ESPTOOL с прошивкой ESP 0.2.5 и параметрами АП 0007<files/firmware/esp-tool-0.9.10.zip>`
+
+*   :download:`ESPTOOL с прошивкой ESP 0.2.6 и параметрами АП 0007<files/firmware/ESP-0.2.6-2020-11-13T1800.zip>`
 
 
 
