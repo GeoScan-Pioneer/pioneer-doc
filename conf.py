@@ -42,7 +42,7 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
-    'sphinxcontrib.youtube',
+    'sphinx.contrib.youtube',
 
 ]
 
