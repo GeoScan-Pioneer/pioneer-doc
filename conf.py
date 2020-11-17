@@ -24,9 +24,9 @@ copyright = '2020, Geoscan LTD'
 author = 'Geoscan LTD'
 
 # The short X.Y version
-version = '2.1'
+version = '2.2'
 # The full version, including alpha/beta/rc tags
-release = 'Mini-update'
+release = 'November update'
 
 
 # -- General configuration ---------------------------------------------------
@@ -42,6 +42,7 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
+    'sphinxcontrib.youtube',
 
 ]
 
