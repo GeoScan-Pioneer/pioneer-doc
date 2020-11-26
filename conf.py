@@ -24,7 +24,7 @@ copyright = '2020, Geoscan LTD'
 author = 'Geoscan LTD'
 
 # The short X.Y version
-version = '2.2'
+version = '2.3'
 # The full version, including alpha/beta/rc tags
 release = 'November update'
 
@@ -43,8 +43,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinxcontrib.fulltoc',
-    'sphinxcontrib.youtube',
-
 ]
 
 # Add any paths that contain templates here, relative to this directory.
