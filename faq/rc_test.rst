@@ -1,4 +1,3 @@
-
 Проверка пульта радиоуправления при проблемах с включением.
 ===========================================================
 
@@ -14,7 +13,9 @@
 -----------------------------
 
 Проблема возникает из-за встроенной в аппаратуру защиты от неправильного положения стиков и тумблеров на момент включения.
+
 Методы решения
+~~~~~~~~~~~~~~
 
 1. Переведите все тумблеры в положение «от себя» (крайнее верхнее положение)
 
@@ -37,7 +38,7 @@
 |image4|
 
 
-.. |image1| image:: faq/media/rc_test/warning.jpg
-.. |image2| image:: faq/media/rc_test/factory.jpg
-.. |image3| image:: faq/media/rc_test/key_test.jpg
-.. |image4| image:: faq/media/rc_test/stick_mode.jpg
+.. |image1| image:: media/rc_test/warning.jpg
+.. |image2| image:: media/rc_test/factory.jpg
+.. |image3| image:: media/rc_test/key_test.jpg
+.. |image4| image:: media/rc_test/stick_mode.jpg
