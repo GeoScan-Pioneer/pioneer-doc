@@ -55,3 +55,4 @@ FAQ
    :caption: Содержание:
 
    mini-nsu
+   rc-test
