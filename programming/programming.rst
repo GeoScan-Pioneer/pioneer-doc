@@ -12,5 +12,6 @@
    /programming/trik/trik_main
    /programming/pioneer_station/pioneer_station_main
    /programming/lua/lua_main
+   python/python_main
    
 
