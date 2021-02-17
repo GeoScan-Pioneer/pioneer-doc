@@ -32,6 +32,7 @@ FDM (fused deposition modeling) – метод послойного наплав
 
 |image0|
 
+
 Рисунок * – FDM печать
 
 Технология Polyjet
