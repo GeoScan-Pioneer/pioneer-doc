@@ -20,6 +20,14 @@
 С примерами Python-скриптов вы можете ознакомиться в папке **examples** в `Github репозитории библиотеки pioneer_sdk <https://github.com/geoscan/pioneer_sdk>`__
 
 
+.. image:: media/qr-code.gif
+
+	:align: center
+
+    Ссылка в Телеграм Канал
+
+По вопросам и предложениям можете писать нам в телеграм канал `Геоскан Пионер <https://t.me/GeoscanPioneer>`__ или писать нам на почту **pioneer_sdk@geoscan.aero**
+
 .. important:: На данный момент библиотека pioneer_sdk работает только на квадрокоптере "Пионер Мини". В дальнейшем будет добавлена поддержка других устройств.
 
 .. toctree::
