@@ -17,7 +17,7 @@
 
 .. figure:: media/mini-back-led.png
    :align: center
-   :scale: 100%
+   :scale: 90%
 
 
 
