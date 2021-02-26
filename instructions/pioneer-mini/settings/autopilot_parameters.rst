@@ -39,7 +39,7 @@
 
 1) Скачайте  файл параметров с установленным Pioneer Station, в папку Firmware/Properties
 
-   :download:`файл параметров АП версии 0007 <Pioneer-mini-1.0.0008.properties>` - для работы с Python и АП 1.6.7459 и новее
+   :download:`файл параметров АП версии 0008 <Pioneer-mini-1.0.0008.properties>` - для работы с Python и АП 1.6.7459 и новее
 
    :download:`файл параметров АП версии 0007 <Pioneer-mini-1.0.0007.properties>`
 
