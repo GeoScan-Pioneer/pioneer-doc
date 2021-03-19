@@ -68,7 +68,7 @@ ______________________
 
 .. figure:: media/qr-code.png
    :align: center
-   :scale: 50%
+   :scale: 10%
 
 Также необходимо произвести обновление ПО квадрокптера, скачать можно по ссылке: https://disk.yandex.ru/d/jxrQLED38ek2Rw?w=1
 
