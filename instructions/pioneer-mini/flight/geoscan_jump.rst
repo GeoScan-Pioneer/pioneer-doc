@@ -64,7 +64,7 @@ ______________________
 
 
 
-Скачать новое приложение можно здесь: https://play.google.com/store/apps/details?id=com.malinowski.quadro
+Скачать новое приложение можно здесь: https://play.google.com/apps/testing/com.malinowski.quadro
 
 .. figure:: media/qr-code.png
    :align: center
