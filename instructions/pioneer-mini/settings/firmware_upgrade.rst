@@ -48,7 +48,15 @@
 
 Если в вашей версии Pioneer Station не встроена актуальная прошивка, можете ее скачать вручную в папку с установленной программой PioneerStation/firmware
 
-:download:`Скачать прошивку автопилота 1.6.7459 c Python (более новая) <pioneer-mini_mini-v10-beta_dev-1.6.7459.bin>`
+
+
+
+`Скачать прошивку автопилота 1.6.7481 c Python (в открыйтой бете) <https://disk.yandex.ru/d/jxrQLED38ek2Rw?w=1>`
+
+Для работы с этой версией прошивки необходима новая версия приложения.
+
+:doc:`../flight/geoscan_jump`
+
 
 :download:`Скачать прошивку автопилота 1.6.7257 <pioneer-mini_mini-v10-boot_gs_dev-1.6.7257-bbf20830e.bin>`
 
