@@ -66,9 +66,9 @@ ______________________
 
 Скачать новое приложение можно здесь: https://play.google.com/apps/testing/com.malinowski.quadro
 
-.. figure:: media/qr-code.png
+.. figure:: media/qr-code.gif
    :align: center
-   :scale: 10%
+   :scale: 50%
 
 Также необходимо произвести обновление ПО квадрокптера, скачать можно по ссылке: https://disk.yandex.ru/d/jxrQLED38ek2Rw?w=1
 
