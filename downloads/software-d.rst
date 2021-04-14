@@ -42,7 +42,7 @@ Software
 
 **Актуальная**
 
-* `Скачать прошивку автопилота 1.6.7481 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__
+* `Скачать прошивку автопилота 1.6.7482 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__
 
 
 **Тестовая**
