@@ -42,14 +42,17 @@ Software
 
 **Актуальная**
 
-*   `Тестовая прошивка автопилота для Пионер Мини 1.6.7481 для открытой беты <https://disk.yandex.ru/d/jxrQLED38ek2Rw?w=1>`__
+* `Скачать прошивку автопилота 1.6.7482 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__
 
 
-**Стабильные**
+**Тестовая**
 
-*   :download:`Cтабильная прошивка автопилота для Пионер Мини 1.6.7257 <files/firmware/pioneer-mini_mini-v10-boot_gs_dev-1.6.7257-bbf20830e.bin>`
+Для доступа к тестовым прошивкам пишите в `телеграмм аккаунт <https://t.me/geoscan_edu>`__
 
 **Устаревшие**
+
+*   :download:`Прошивка автопилота для Пионер Мини 1.6.7257 <files/firmware/pioneer-mini_mini-v10-boot_gs_dev-1.6.7257-bbf20830e.bin>`
+
 
 *   :download:`Прошивка автопилота для Пионер Мини 1.6.7459. Добавлена поддержка pioneer_sdk и программирования на Python <files/firmware/pioneer-mini_mini-v10-beta_dev-1.6.7459.bin>`
 

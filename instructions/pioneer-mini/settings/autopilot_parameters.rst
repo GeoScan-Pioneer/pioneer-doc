@@ -41,13 +41,12 @@
 
 1) Скачайте  файл параметров с установленным Pioneer Station, в папку Firmware/Properties
 
-   :download:`файл параметров АП версии 0008 <Pioneer-mini-1.0.0008.properties>` - для работы с Python и АП 1.6.7459 и новее
+`Файл параметров АП версии 0012 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__ - для работы с Python + Mavlink и АП 1.6.7482 и новее.
 
-   :download:`файл параметров АП версии 0007 <Pioneer-mini-1.0.0007.properties>`
 
 2) Нажмите кнопку "Открыть из файла" |upload|
 
-3) После чего в папке с установленным Pioneer Station, откройте папку "Firmware", затем папку "Properties" после чего выберите файл *Pioneer-mini-release-1.0.000*.properties* нажмите "Открыть".
+3) После чего в папке с установленным Pioneer Station, откройте папку "Firmware", затем папку "Properties" после чего выберите файл *Pioneer-mini-release-1.0.0012.properties* нажмите "Открыть".
 
 .. figure:: media/firmware-prop.PNG
    :align: center
