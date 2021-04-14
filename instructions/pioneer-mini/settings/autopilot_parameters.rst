@@ -41,7 +41,7 @@
 
 1) Скачайте  файл параметров с установленным Pioneer Station, в папку Firmware/Properties
 
-`Файл параметров АП версии 0012 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__ - для работы с Python + Mavlink и АП 1.6.7481 и новее.
+`Файл параметров АП версии 0012 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__ - для работы с Python + Mavlink и АП 1.6.7482 и новее.
 
 
 2) Нажмите кнопку "Открыть из файла" |upload|
