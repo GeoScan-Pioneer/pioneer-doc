@@ -15,7 +15,7 @@
 Процесс **pos_and_orient** – отвечает за работу с маркером а
 **drone_flight** – за управление квадрокоптером.
 
-.. figure:: media/image1.png
+.. figure:: media/image1.PNG
     :scale:  80%
     :align: center
 
@@ -25,7 +25,7 @@
 буфер закрывается, следовательно завершается обмен данными и коптер
 заходит на посадку.
 
-.. figure:: media/image2.png
+.. figure:: media/image2.PNG
     :scale:  80%
     :align: center
 
@@ -39,7 +39,7 @@
 квадрокоптера, положение камеры, положение самого маркера, а также
 проекция от него, чтобы держаться на определённом растяни от маркера.
 
-.. figure:: media/image3.png
+.. figure:: media/image3.PNG
     :scale:  50%
     :align: center
 
