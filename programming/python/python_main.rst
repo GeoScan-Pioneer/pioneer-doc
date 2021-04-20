@@ -39,4 +39,5 @@
 
    python-sdk-main
    pioneer-sdk-methods
+   python-sdk-scripts
 
