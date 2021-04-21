@@ -18,6 +18,12 @@
 *  Описание методов `pioneer_sdk`_
 
     .. _pioneer_sdk: pioneer-sdk-methods.html
+    
+*  `Описание`_ работы скриптов 
+
+    .. _Описание: python-sdk-scripts.html
+
+
 
 С примерами Python-скриптов вы можете ознакомиться в папке **examples** в `Github репозитории библиотеки pioneer_sdk <https://github.com/geoscan/pioneer_sdk>`__
 
