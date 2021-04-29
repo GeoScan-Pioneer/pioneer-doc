@@ -93,7 +93,7 @@ _______
 
 **Стабильные:**
 
-`Скачать прошивку автопилота 1.6.7287 <https://disk.yandex.ru/d/ffN2OSTgEO8cqg>`__
+* `Прошивка для Pioneer Max 1.6.7287 <https://disk.yandex.ru/d/ffN2OSTgEO8cqg>`__
 
 **Тестовые:**
 
