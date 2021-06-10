@@ -34,12 +34,11 @@ ________
 
 **Стабильные:**
 
+* `Прошивка платы расширения 4.0 <https://disk.yandex.ru/d/bUO8UcIefEEALA>`__
+
 **Тестовые:**
 
-*   :download:`Прошивка модуля оптического позиционирования <files/firmware-modules/ModuleOpticalFlow_1.6.612c42b_aes.bin>`
-
-
-Предыдущие версии прошивок вы можете найти в папке firmware с установленным Pioneer Station.
+**Устаревшие:**
 
 ______
 
