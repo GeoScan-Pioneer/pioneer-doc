@@ -136,7 +136,7 @@ ______
 
 **Стабильные:**
 
-* `Параметры АП для Пионер 1.6.7178 <https://disk.yandex.ru/d/ah2HYGtw1LIyig>`__
+* `Параметры АП для Пионер 1.6.7178 (update) <https://disk.yandex.ru/d/Doq-oA6ZwtM9Tw>`__
 
 **Тестовые:**
 
