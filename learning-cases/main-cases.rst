@@ -16,3 +16,4 @@
    :caption: Содержание:
 
    digital-level/digital-level-led
+   pioneer-human-tracking/pioneer_human_tracking
