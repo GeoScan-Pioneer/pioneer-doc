@@ -28,6 +28,21 @@ version = '2.3'
 # The full version, including alpha/beta/rc tags
 release = 'November update'
 
+# Здесь перечисляются множественные подстановки, которые при билде будут объявлятся в конце страницы (версии,ссылки и.т.д) ----
+
+rst_epilog = """
+
+.. |fw_ap_mini| replace:: `Pioneer Mini 1.6.7482 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__
+.. |fw_ap_base| replace:: `Pioneer Base 1.6.7178 <https://disk.yandex.ru/d/WqHQAxirCzi7iw>`__
+.. |fw_ap_max| replace:: `Pioneer Max 1.6.7287 <https://disk.yandex.ru/d/ffN2OSTgEO8cqg>`__
+
+.. |fw_opt_board| replace:: `Option Bord 4.0 <https://disk.yandex.ru/d/8M2tgzu0DCV0jw>`__
+.. |fw_USNav| replace:: `Модуль USNav <https://disk.yandex.ru/d/1YYCDEVqNCpBvA>`__
+
+.. |dnld_ps| replace:: `Установщик Pioneer Station <https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe>`__
+.. |dnld_ps32| replace:: `Установщик Pioneer Station 32bit <https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip>`__
+
+"""
 
 # -- General configuration ---------------------------------------------------
 

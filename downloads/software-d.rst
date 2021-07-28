@@ -18,14 +18,14 @@ Software - подраздел в котором вы сможете найти �
 
 **Стабильные:**
 
-* `Прошивка АП для Пионер 1.6.7178 <https://disk.yandex.ru/d/WqHQAxirCzi7iw>`__
+* |fw_ap_base|
 
 **Тестовые:**
 
 **Устаревшие:**
 
-*   :download:`Прошивка АП для Пионер 1.5.6173<files/firmware/pioneer_base_V1_2-boot_pioneer-1.5.6173-8efaccb93_836.bin>`
-*   :download:`Прошивка АП для Пионер 1.4.4922<files/firmware/pioneer_base_V1_2_gs-1.4.4922.bin>`
+* `Pioneer Base 1.5.6173 <https://disk.yandex.ru/d/WPgcrfgPKFpHBg>`__
+* `Pioneer Base 1.4.4922 <https://disk.yandex.ru/d/amKrbOJ686VDVA>`__
 
 ________
 
@@ -34,7 +34,12 @@ ________
 
 **Стабильные:**
 
+<<<<<<< Updated upstream
 * `Прошивка платы расширения 4.0 <https://disk.yandex.ru/d/bUO8UcIefEEALA>`__
+=======
+* Прошивка платы подключения дополнительных модулей v4.0 - |fw_opt_board|
+* Прошивка модуля навигации в помещении USNav - |fw_USNav|
+>>>>>>> Stashed changes
 
 **Тестовые:**
 
@@ -48,31 +53,35 @@ ______
 
 **Стабильные:**
 
-* `Прошивка автопилота для Пионер Мини 1.6.7482 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__
-
+* |fw_ap_mini|
 
 **Тестовые:**
 
+<<<<<<< Updated upstream
+=======
+* `Бета обновление ПО для Пионера Мини от 24.06.21 <https://disk.yandex.ru/d/zXTAyxGHrJBoDA>`__
+
+>>>>>>> Stashed changes
 Для доступа к тестовым прошивкам пишите в `телеграмм аккаунт <https://t.me/geoscan_edu>`__
 
 **Устаревшие:**
 
-*   :download:`Прошивка автопилота для Пионер Мини 1.6.7257 <files/firmware/pioneer-mini_mini-v10-boot_gs_dev-1.6.7257-bbf20830e.bin>`
+* `Pioneer Mini 1.6.7257 <https://disk.yandex.ru/d/WPgcrfgPKFpHBg>`__
 
+* `Pioneer Mini 1.6.7459 <https://disk.yandex.ru/d/vjykKgJVmepbZQ>`__ (Добавлена поддержка pioneer_sdk и программирования на Python)
 
-*   :download:`Прошивка автопилота для Пионер Мини 1.6.7459. Добавлена поддержка pioneer_sdk и программирования на Python <files/firmware/pioneer-mini_mini-v10-beta_dev-1.6.7459.bin>`
+* `Pioneer Mini 1.6.7011 <https://disk.yandex.ru/d/HqEswyY2PQRvrw>`__
 
-*   :download:`Стабильная прошивка для Пионер Мини 1.6.7011<files/firmware/pioneer_mini_V1_1-boot-pioneer-1.6.7011.bin>`
+* `Pioneer Mini 1.6.7009 <https://disk.yandex.ru/d/mvSrLNtjDdY_fw>`__
 
-*   :download:`Прошивка для Пионер Мини 1.6.7006<files/firmware/pioneer-mini_mini-v10-boot_gs_dev-1.6.7006-2fdc3e6fe.bin>`
+* `Pioneer Mini 1.6.7008 <https://disk.yandex.ru/d/rLFfxYVPOwPpNA>`__
 
-*   :download:`Прошивка для Пионер Мини 1.6.7007<files/firmware/pioneer-mini_mini-v10-boot_gs_dev-1.6.7007-ede8e892f.bin>`
+* `Pioneer Mini 1.6.7007 <https://disk.yandex.ru/d/mmkbSU8OmG7KfA>`__
 
-*   :download:`Прошивка для Пионер Мини 1.6.7008<files/firmware/pioneer-mini_mini-v10-boot_gs_dev-1.6.7008-c5e9e4d5b.bin>`
+* `Pioneer Mini 1.6.7006 <https://disk.yandex.ru/d/IGOPr_vnh8XdgA>`__
 
-*   :download:`Прошивка для Пионер Мини 1.6.7009<files/firmware/pioneer-mini_mini-v10-boot_gs_dev-1.6.7009-bae50ba60.bin>`
+* `Pioneer Mini 1.6.6977 <https://disk.yandex.ru/d/ndf7lhV3gSIhpA>`__
 
-*   :download:`Прошивка для Пионер Мини 1.6.6977<files/firmware/pioneer-mini_mini-v10-boot_gs_dev-1.6.6977-b0d5c894b.bin>`
 
 Прошивки ESP32 для "Pioneer Mini"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,9 +90,9 @@ ______
 
 **Устаревшие:**
 
-*   :download:`ESPTOOL с прошивкой ESP 0.2.5 и параметрами АП 0007<files/firmware/esp-tool-0.9.10.zip>`
+* ESPTOOL с прошивкой ESP 0.2.5 и параметрами автопилота 0007 - `ESPTool 0.2.5 <https://disk.yandex.ru/d/oWXwX4rLs-Fucw>`__
 
-*   :download:`ESPTOOL с прошивкой ESP 0.2.6 и параметрами АП 0007<files/firmware/ESP-0.2.6-2020-11-13T1800.zip>`
+* ESPTOOL с прошивкой ESP 0.2.6 и параметрами автопилота 0007 - `ESPTool 0.2.6 <https://disk.yandex.ru/d/wslNfLDz23mE2g>`__
 
 _______
 
@@ -92,7 +101,7 @@ _______
 
 **Стабильные:**
 
-* `Прошивка для Pioneer Max 1.6.7287 <https://disk.yandex.ru/d/ffN2OSTgEO8cqg>`__
+* |fw_ap_max|
 
 **Тестовые:**
 
@@ -111,23 +120,21 @@ _______
 
 **Стабильные:**
 
-*	`Параметры АП Пионер Мини 1.0.0012 <https://disk.yandex.ru/d/AKSr6SCzZXvziQ>`__ (Для работы с Python + Mavlink и АП 1.6.7482 и новее)
+* `Параметры АП Pioneer Mini 1.0.0012 <https://disk.yandex.ru/d/AKSr6SCzZXvziQ>`__ (Для работы с Python + Mavlink и АП 1.6.7482 и новее)
 
-*   :download:`Параметры АП Пионер Мини 1.0.0007<files/properties/Pioneer-mini-1.0.0007.properties>` (Для корректной работой с новой версией прошивки ESP 32)
+* `Параметры АП Pioneer Mini 1.0.0007 <https://disk.yandex.ru/d/Vt6cgbspvuj55Q>`__ (Для корректной работой с новой версией прошивки ESP 32)
 
 **Тестовые:**
 
 **Устаревшие:**
 
-*   :download:`Параметры АП Пионер Мини 1.0.0003<files/properties/Pioneer-mini-release-1.0.0003.properties>`
+* `Параметры АП Pioneer Mini 1.0.0004 <https://disk.yandex.ru/d/OcaxquZ6LHq_2A>`__ (Изменены параметры АП влияющие на отключение моторов.)
 
-*   :download:`Параметры АП Пионер Мини 1.0.0001<files/properties/Pioneer-mini-release-1.0.0001.properties>`
+* `Параметры АП Pioneer Mini 1.0.0003 <https://disk.yandex.ru/d/n9ZW5_KnBi_chA>`__
 
-*   :download:`Параметры АП Пионер Мини 1.0.0002<files/properties/Pioneer-mini-release-1.0.0002.properties>`
+* `Параметры АП Pioneer Mini 1.0.0002 <https://disk.yandex.ru/d/1JZUIGoqLgltMw>`__
 
-*   :download:`Параметры АП Пионер Мини 1.0.0004<files/properties/Pioneer-mini-test-1.0.0004.properties>`
-
-Изменены параметры АП влияющие на отключение моторов.
+* `Параметры АП Pioneer Mini 1.0.0001 <https://disk.yandex.ru/d/MLrGnb5ovik-Rw>`__
 
 ______
 
@@ -136,7 +143,11 @@ ______
 
 **Стабильные:**
 
+<<<<<<< Updated upstream
 * `Параметры АП для Пионер 1.6.7178 <https://disk.yandex.ru/d/ah2HYGtw1LIyig>`__
+=======
+* `Параметры АП для Pioneer Base 1.6.7178 (update) <https://disk.yandex.ru/d/Doq-oA6ZwtM9Tw>`__
+>>>>>>> Stashed changes
 
 **Тестовые:**
 
@@ -150,7 +161,7 @@ ______
 
 **Стабильные:**
 
-*   :download:`Параметры для Пионер Макс<files/properties/newmotors-max.properties>`
+* `Параметры АП для Pioneer Max <https://disk.yandex.ru/d/WkG_Wph_brs2jA>`__
 
 **Тестовые:**
 
