@@ -197,3 +197,40 @@ Cоздание эскизов и проектирование 3D-модели:
 .. |image11| image:: media/image11.jpg
    :width: 2in
    :height: 2in
+.. |image12| image:: media/image12.jpg
+   :width: 2in
+   :height: 2in
+.. |image13| image:: media/image13.jpg
+   :width: 2in
+   :height: 2in
+.. |image14| image:: media/image14.jpg
+   :width: 2in
+   :height: 2in
+.. |image15| image:: media/image15.jpg
+   :width: 2in
+   :height: 2in
+.. |image16| image:: media/image16.jpg
+   :width: 2in
+   :height: 2in
+.. |image17| image:: media/image17.jpg
+   :width: 2in
+   :height: 2in
+.. |image18| image:: media/image18.jpg
+   :width: 2in
+   :height: 2in
+.. |image19| image:: media/image19.jpg
+   :width: 2in
+   :height: 2in
+.. |image20| image:: media/image20.jpg
+   :width: 2in
+   :height: 2in
+.. |image21| image:: media/image21.jpg
+   :width: 2in
+   :height: 2in
+.. |image22| image:: media/image22.jpg
+   :width: 2in
+   :height: 2in
+.. |image23| image:: media/image23.jpg
+   :width: 2in
+   :height: 2in
+
