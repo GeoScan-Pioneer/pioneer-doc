@@ -15,7 +15,7 @@
 К гироскопу на кадрокптерке мы обращаемся через класс Sensors() и получем от него три прараметра, а именно углы отклнения по тангажу и крену а также рысканье.
 Выглядит это следующим образом: 
 
-roll, pitch, yaw = Sensors.orientation()
+*roll, pitch, yaw = Sensors.orientation()*
     
 .. literalinclude:: led_matrix_game.lua
    :language: lua
