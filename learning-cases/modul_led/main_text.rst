@@ -17,7 +17,10 @@
 
 roll, pitch, yaw = Sensors.orientation()
     
-
+.. literalinclude:: led_matrix_game.lua
+   :language: lua
+   :encoding: windows-1251
+   :linenos:
 
 
 .. |image0| image:: media/work_complect.jpg
