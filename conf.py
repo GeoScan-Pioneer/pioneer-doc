@@ -44,6 +44,7 @@ extensions = [
     'sphinx.ext.doctest',
 ]
 
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -77,7 +78,8 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_rtd_theme_upgraded'
+html_theme_path = ['_themes', ]
 
 def setup(app):
     app.add_css_file('style.css')
@@ -98,6 +100,15 @@ html_show_sphinx = False
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_css_files = [
+    'css/index.css',
+]
+
+html_js_files = [
+    'js/plates.js',
+    'js/index.js'
+]
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
