@@ -44,70 +44,79 @@
 
 | Геоскан "Пионер" - это линейка многофункциональных образовательных квадрокоптеров. Их можно использовать как учебную платформу в школе, авиамодельной секции, кружке робототехники или дома.
 
-.. raw:: html
+.. plate::
+    :icon: _static/images/instructions.png
+    :head: Инструкции по эксплуатации
+    :caption: Соберите и настройте квадрокоптер для первого полета!
 
-    <div class="plate">
-        <div class="image"> <img src="_static/images/instructions.png" alt="instructions"> </div>
-        <div class="header"> <p>Инструкции по эксплуатации</p> </div>
-        <div class="spacer"></div>
-        <hr noshade>
-        <div class="caption"> <p>Соберите и настройте квадрокоптер для первого полета!</p> </div>
-        <div class="content">
-            <p>В данном разделе вы найдете основную информацию для первой сборки и настройки квадрокоптера для первого полёта.</p>
-            <p>На данный момент в линейке представлено три модели:</p>
-            <ul>
-                <li>Пионер мини</li>
-                <li>Пионер стандарт</li>
-                <li>Пионер макс</li>
-            </ul>
-            <div>*тут будет содержание*</div>
-        </div>
-    </div>
+    В данном разделе вы найдете основную информацию для первой сборки и настройки квадрокоптера для первого полёта.
 
-.. raw:: html
+    На данный момент в линейке представлено три модели:
 
-    <div class="plate">
-        <div class="image"> <img src="_static/images/modules.png" alt="modules"> </div>
-        <div class="header"> <p>Дополнительные модули</p> </div>
-        <div class="spacer"></div>
-        <hr noshade>
-        <div class="caption"> <p>Расширьте возможности своих летательных аппаратов!</p> </div>
-        <div class="content">
-            <p>Для подключения используются разъёмы Х1 и Х2 на верхней части платы. Большинство модулей монтируются на плате подключения дополнительных модулей и соединяются с базовой платой шлейфами. Модули GPS и навигации в помещении крепятся напрямую на базовую плату «Пионера».</p>
-            <img alt="../_images/p_base.png" src="_static/images/p_base.png">
-            <p>Больше о каждом из модулей вы можете узнать на посвященной ему странице:</p>
-            <div>*тут будет содержание*</div>
-        </div>
-    </div>
+    * Пионер мини
+    * Пионер стандарт
+    * Пионер макс
 
-.. raw:: html
+.. plate::
+    :icon: _static/images/modules.png
+    :head: Дополнительные модули
+    :caption: Расширьте возможности своих летательных аппаратов!
 
-    <div class="plate">
-        <div class="image"> <img src="_static/images/code.png" alt="code"> </div>
-        <div class="header"> <p>Программное обеспечение</p> </div>
-        <div class="spacer"></div>
-        <hr noshade>
-        <div class="caption"> <p>Научитесь программировать ваш квадрокоптер!</p> </div>
-        <div class="content">
-            <div>alskdlasalskdlaskjclasj;lasjclkasnlkcnaskcnas.</div>
-            <div>alskdlasalskdlaskjclasj;lasjclkasnlkcnaskcnas.</div>
-            <div>alskdlasalskdlaskjclasj;lasjclkasnlkcnaskcnas.</div>
-        </div>
-    </div>
+    Для подключения используются разъёмы Х1 и Х2 на верхней части платы. Большинство модулей монтируются на плате подключения дополнительных модулей и соединяются с базовой платой шлейфами. Модули GPS и навигации в помещении крепятся напрямую на базовую плату «Пионера».
 
-.. raw:: html
+    .. figure:: _static/images/p_base.png
+        :alt: ../_images/p_base.png
 
-    <div class="plate">
-        <div class="image"> <img src="_static/images/books.png" alt="books"> </div>
-        <div class="header"> <p>База знаний (Теория)</p> </div>
-        <div class="spacer"></div>
-        <hr noshade>
-        <div class="caption"> <p>Узнайте много интересной информации о БПЛА!</p> </div>
-        <div class="content">
-            <div>alskdlasalskdlaskjclasj;lasjclkasnlkcnaskcnas.</div>
-            <div>alskdlasalskdlaskjclasj;lasjclkasnlkcnaskcnas.</div>
-        </div>
-    </div>
+    Больше о каждом из модулей вы можете узнать на посвященной ему странице:
+
+.. plate::
+    :icon: _static/images/code.png
+    :head: Программное обеспечение
+    :caption: Научитесь программировать ваш квадрокоптер!
+
+    asdja;sjdksakd'askd'kasd'ka
+
+    slflsdj;fja;skfa;lk;laks;ldka;lsdaskd
+
+    lksalfksldfjls
+
+.. plate::
+    :icon: _static/images/books.png
+    :head: База знаний (Теория)
+    :caption: Узнайте много интересной информации о БПЛА!
+
+    asidlaksdosad;laskd;las;clas
+
+    lksnfl;as;alsk;'dkas';kd;'sak
+
+.. plate::
+    :icon: _static/images/books.png
+    :head: Привет мир!
+    :caption: Тестовая плашка сделанная на рст
+
+    С "Пионером" вы сможете:
+
+    *	изучить основы робототехники и авионики;
+    *	узнать, как устроен квадрокоптер;
+    *	научиться управлять им;
+    *	адаптировать платформу под разные задачи;
+    *	освоить азы программирования.
+
+    .. figure:: ./_static/images/akb.png
+        :alt: img\_11.png
+
+
+    .. toctree::
+        :maxdepth: 4
+        :caption: Hello
+
+        learning-cases/main-cases
+
+.. toctree::
+        :maxdepth: 4
+        :caption: Hello
+
+        learning-cases/main-cases
 
 На данный момент в линейке представлено три модели:
 
@@ -125,21 +134,6 @@
 *	адаптировать платформу под разные задачи;
 *	освоить азы программирования.
 
-
-
 Каждый квадрокоптер представляет собой набор для создания и программирования беспилотных летательных аппаратов, который позволит ученикам школ, авиамодельных секций и кружков робототехники освоить полезные навыки и узнать о современных профессиях. С помощью набора Геоскан Пионер Вы сможете интегрировать последние технические достижения в учебный процесс.
 
 `Вернуться на сайт "Пионер"`_
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Содержание:
-
-   instructions/main_instruction
-   module/module_main
-   programming/programming
-   database/main-database
-   downloads/download-main
-   learning-cases/main-cases
-   FAQ
-   changelog

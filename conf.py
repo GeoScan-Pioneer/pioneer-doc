@@ -78,11 +78,24 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
+import os
+import sys
+
+sys.path.append(os.path.abspath("./_ext"))
+
+extensions = ['plate']
+
+from plate import PlateDirective
+from plate import platenode
+
 html_theme = 'sphinx_rtd_theme_upgraded'
 html_theme_path = ['_themes', ]
 
 def setup(app):
     app.add_css_file('style.css')
+
+    app.add_node(platenode, html=(PlateDirective.html_platenode, None))
+    app.add_directive('plate', PlateDirective)
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
