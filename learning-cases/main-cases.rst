@@ -17,3 +17,5 @@
 
    digital-level/digital-level-led
    pioneer-human-tracking/pioneer_human_tracking
+   dev_protection_for_pioneer_mini/main_text
+   modul_led/main_text
