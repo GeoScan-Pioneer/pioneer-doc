@@ -1,7 +1,7 @@
 .. """Пионер""" documentation master file, created by
    sphinx-quickstart on Mon Sep 10 13:58:08 2018.
    You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+   contain the root `toctree` directive./
 
 .. _Вернуться на сайт "Пионер": https://www.geoscan.aero/ru/pioneer/
 
@@ -57,6 +57,12 @@
     * Пионер стандарт
     * Пионер макс
 
+    .. toctree::
+        :maxdepth: 2
+        :caption: Содержание:
+
+        instructions/main_instruction
+
 .. tile::
     :icon: _static/images/modules.png
     :head: Дополнительные модули
@@ -67,49 +73,73 @@
     .. figure:: _static/images/p_base.png
         :alt: ../_images/p_base.png
 
-    Больше о каждом из модулей вы можете узнать на посвященной ему странице:
+    .. toctree::
+        :maxdepth: 2
+        :caption: Больше о каждом из модулей вы можете узнать на посвященной ему странице:
+
+        module/module_main
 
 .. tile::
     :icon: _static/images/code.png
     :head: Программное обеспечение
     :caption: Научитесь программировать ваш квадрокоптер!
 
-    asdja;sjdksakd'askd'kasd'ka
+    Кроме полета на дистанционном управлении, «Пионер» может следовать заложенной перед взлетом программе и автономно выполнять прописанные задачи.
 
-    slflsdj;fja;skfa;lk;laks;ldka;lsdaskd
+    Для удобства программирования квадрокоптер поддерживает работу с такими инструментами как Pioneer Station и TRIK Studio, которые позволяют сформировать полетное задание и загрузить его в память «Пионера» при подключении к компьютеру.
 
-    lksalfksldfjls
+    В этом разделе вы научитесь работать с квадрокоптером через интерфейс Pioneer Station, рассмотрите примеры полетных сценариев и узнаете как программировать подключаемые модули.
+
+    .. toctree::
+        :maxdepth: 2
+        :caption: Содержание:
+
+        programming/programming
 
 .. tile::
     :icon: _static/images/books.png
     :head: База знаний (Теория)
     :caption: Узнайте много интересной информации о БПЛА!
 
-    asidlaksdosad;laskd;las;clas
-
-    lksnfl;as;alsk;'dkas';kd;'sak
-
-.. tile::
-    :icon: _static/images/books.png
-    :head: Привет мир!
-    :caption: Тестовая плашка сделанная на рст
-
-    С "Пионером" вы сможете:
-
-    *	изучить основы робототехники и авионики;
-    *	узнать, как устроен квадрокоптер;
-    *	научиться управлять им;
-    *	адаптировать платформу под разные задачи;
-    *	освоить азы программирования.
-
-    .. figure:: ./_static/images/akb.png
-        :alt: img\_11.png
+    В данном разделе вы сможете найти информацию связанную со сферой автономных летательных аппаратов. Информацию в данном разделе можно использовать при разработке собственных образовательных программ.
 
     .. toctree::
-        :maxdepth: 1
+        :maxdepth: 2
         :caption: Содержание:
 
-        instructions/main_instruction
+        database/main-database
+
+.. tile::
+    :icon: _static/images/cloud.png
+    :head: Загрузки
+    :caption: Скачайте необходимые прошивки и ПО!
+
+    В данном разделе вы найдете полезные файлы которые смогут вам помочь при работе с квадрокоптерами линейки «Пионер».
+
+    Данный раздел содержит следующие подразделы:
+
+    * **Software** - подраздел в котором вы сможете найти прошивки автопилота, параметры автопилота, тестовые Lua-скрипты, версии НСУ Pioneer Station.
+    * **Hardware** - подраздел в котором хранятся файлы по связанные с аппаратной частью, здесь содержатся: 3d модели, «распиновки» разъемов.
+    * **Методики и инструкции** - содержит наши образовательные методические материалы, а также сторонние инструкции от других производителей.
+
+    .. toctree::
+        :maxdepth: 2
+        :caption: Содержание
+
+        downloads/download-main
+
+.. tile::
+    :icon: _static/images/drone.png
+    :head: Проекты
+    :caption: Повторите классные проекты от сообщества!
+
+    В данном разделе документации, вы найдете различные примеры проектов созданные на базе квадрокоптеров «Пионер».
+
+    .. toctree::
+        :maxdepth: 2
+        :caption: Содержание:
+
+        learning-cases/main-cases
 
 
 На данный момент в линейке представлено три модели:
