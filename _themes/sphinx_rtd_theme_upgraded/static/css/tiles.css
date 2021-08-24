@@ -1,3 +1,7 @@
+:root {
+    --tile-height: 90px;
+}
+
 .tile .toctree-wrapper.compound {
     display: block;
 }
@@ -9,8 +13,8 @@
     border-radius: 10px;
     display: grid;
     grid-template-columns: 100px 210px minmax(0, 60px) 15px minmax(330px, auto);
-    grid-template-rows: 90px auto;
-    height: 90px;
+    grid-template-rows: var(--tile-height) auto;
+    height: var(--tile-height);
     align-items: center;
     overflow: hidden;
     transition-property: height;

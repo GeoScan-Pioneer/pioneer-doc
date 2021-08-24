@@ -1,18 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
+    let tileHeight = getComputedStyle(document.documentElement).getPropertyValue('--tile-height');
     document.querySelectorAll(".tile").forEach(plate => {
         plate.addEventListener('click', event => {
-            if (plate.style.height == '100px' || plate.style.height == '') {
-                plate.style.height = plate.scrollHeight + 'px'
-                plate.classList.toggle('large')
+            if (tileHeight.includes(plate.style.height) || plate.style.height == '') {
+                plate.style.height = plate.scrollHeight + 'px';
+                plate.classList.toggle('large');
             }
             else {
-                plate.style.height = '90px'
-                plate.classList.toggle('large')
+                plate.style.height = tileHeight;
+                plate.classList.toggle('large');
             }
         });
         window.addEventListener('resize', event => {
-            if (plate.style.height != '90px' && plate.style.height != '')
-                plate.style.height = plate.scrollHeight + 'px'
+            if (!tileHeight.includes(plate.style.height) && plate.style.height != '')
+                plate.style.height = plate.scrollHeight + 'px';
         });
     });
 
