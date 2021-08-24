@@ -106,12 +106,6 @@
         :alt: img\_11.png
 
 
-    .. toctree::
-        :maxdepth: 3
-        :caption: Hello
-
-        learning-cases/main-cases
-
 На данный момент в линейке представлено три модели:
 
 .. csv-table::

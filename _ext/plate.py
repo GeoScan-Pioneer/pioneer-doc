@@ -1,22 +1,16 @@
 from docutils import nodes, utils
 from docutils.nodes import Body, Element
 from docutils.parsers.rst import directives
-from docutils.statemachine import ViewList
 
-from sphinx.util.nodes import nested_parse_with_titles
 from docutils.parsers.rst import Directive
 
 from docutils.core import publish_parts
 from rst2html5 import HTML5Writer
 
-from sphinx import addnodes
-
 class platenode(Body, Element):
     pass
 
 class PlateDirective(Directive):
-    required_arguments = 0
-    optional_arguments = 0
     final_argument_whitespace = True
 
     option_spec = {
@@ -34,51 +28,10 @@ class PlateDirective(Directive):
         body = ''
         rst = ''
 
-        toctree_flag = False
-        ind1, ind2 = 0, 0
-
-        content = [i for i in self.content]
-
-        toctree_params = []
-        toctree_sources = []
-
         for pos, line in enumerate(self.content):
-            if line.encode('utf-8') == b'':
-                line = '\n'
-
-            if not toctree_flag:
-                toctree_index = line.find('.. toctree::')
-                if toctree_index >= 0:
-                    toctree_flag = True
-                    body += publish_parts(writer=HTML5Writer(), source=rst)['body'] + '\n'
-                    rst = ''
-
-                    ind1 = content.index('', pos+1)
-                    toctree_params = content[pos+1:ind1]
-                    toctree_params = dict([(i.split(':')[1], i.split(':')[2]) for i in toctree_params])
-
-                    try:
-                        ind2 = content.index('', ind1+1)
-                        toctree_sources = content[ind1+1:ind2]
-                    except Exception:
-                        toctree_sources = content[ind1+1:]
-
-                    continue
-                rst += line + '\n'
-            else:
-                if pos >= ind2:
-                    toctree_flag = False
+            rst += line + '\n'
 
         body += publish_parts(writer=HTML5Writer(), source=rst)['body']
-
-        print('params: ', toctree_params)
-        print('sources: ', toctree_sources)
-
-        toc = addnodes.toctree()
-        print("keeeeeeeeeeek: ", toc)
-
-        wrappernode = nodes.compound(classes=['toctree-wrapper1'])
-        wrappernode.append(toc)
 
         node = platenode()
         node['content'] = body
