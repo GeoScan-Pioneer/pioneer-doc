@@ -1,7 +1,7 @@
 .. """Пионер""" documentation master file, created by
    sphinx-quickstart on Mon Sep 10 13:58:08 2018.
    You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive./
+   contain the root `toctree` directive.
 
 .. _Вернуться на сайт "Пионер": https://www.geoscan.aero/ru/pioneer/
 
@@ -44,7 +44,7 @@
 
 | Геоскан "Пионер" - это линейка многофункциональных образовательных квадрокоптеров. Их можно использовать как учебную платформу в школе, авиамодельной секции, кружке робототехники или дома.
 
-.. plate::
+.. tile::
     :icon: _static/images/instructions.png
     :head: Инструкции по эксплуатации
     :caption: Соберите и настройте квадрокоптер для первого полета!
@@ -57,7 +57,7 @@
     * Пионер стандарт
     * Пионер макс
 
-.. plate::
+.. tile::
     :icon: _static/images/modules.png
     :head: Дополнительные модули
     :caption: Расширьте возможности своих летательных аппаратов!
@@ -69,7 +69,7 @@
 
     Больше о каждом из модулей вы можете узнать на посвященной ему странице:
 
-.. plate::
+.. tile::
     :icon: _static/images/code.png
     :head: Программное обеспечение
     :caption: Научитесь программировать ваш квадрокоптер!
@@ -80,7 +80,7 @@
 
     lksalfksldfjls
 
-.. plate::
+.. tile::
     :icon: _static/images/books.png
     :head: База знаний (Теория)
     :caption: Узнайте много интересной информации о БПЛА!
@@ -89,7 +89,7 @@
 
     lksnfl;as;alsk;'dkas';kd;'sak
 
-.. plate::
+.. tile::
     :icon: _static/images/books.png
     :head: Привет мир!
     :caption: Тестовая плашка сделанная на рст
@@ -104,6 +104,12 @@
 
     .. figure:: ./_static/images/akb.png
         :alt: img\_11.png
+
+    .. toctree::
+        :maxdepth: 1
+        :caption: Содержание:
+
+        instructions/main_instruction
 
 
 На данный момент в линейке представлено три модели:
@@ -127,14 +133,15 @@
 `Вернуться на сайт "Пионер"`_
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Содержание:
+    :hidden:
+    :maxdepth: 2
+    :caption: Содержание:
 
-   instructions/main_instruction
-   module/module_main
-   programming/programming
-   database/main-database
-   downloads/download-main
-   learning-cases/main-cases
-   FAQ
-   changelog
+    instructions/main_instruction
+    module/module_main
+    programming/programming
+    database/main-database
+    downloads/download-main
+    learning-cases/main-cases
+    FAQ
+    changelog

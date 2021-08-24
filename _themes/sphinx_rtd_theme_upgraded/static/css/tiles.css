@@ -1,0 +1,134 @@
+.tile .toctree-wrapper.compound {
+    display: block;
+}
+
+.tile {
+    margin-bottom: 24px;
+    background-color: white;
+    box-shadow: 0px 2px 23px -15px rgba(0,0,0,20);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100px 210px minmax(0, 60px) 15px minmax(330px, auto);
+    grid-template-rows: 100px auto;
+    align-items: center;
+    overflow: hidden;
+    height: 100px;
+    transition-property: height;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+
+.tile div {
+    margin: 15px;
+}
+
+.tile p {
+    margin: 0px;
+    transition-property: color;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+    color: black;
+}
+
+.tile.large .header p,
+.tile.large .caption p {
+    color: #E15D2B;
+}
+
+.tile hr {
+    width: 1px;
+    height: 90px;
+    border: 0;
+    background-color: black;
+    transition-property: background-color;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+
+.tile.large hr {
+    background-color: #E15D2B;
+}
+
+.tile .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.tile .image {
+    width: 81px;
+    min-width: 81px;
+    max-width: 81px;
+}
+
+.tile .content {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 10px;
+}
+
+.tile .content p {
+    margin-bottom: 10px;
+}
+
+.tile .content img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1090px) {
+    .tile {
+        grid-template-columns: minmax(120px, 190px) 15px minmax(185px, auto);
+    }
+
+    .tile .caption,
+    .tile .spacer {
+        display: none;
+    }
+
+    .tile hr {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .tile .image {
+        width: auto;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .tile .content img {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 415px), (max-height: 415px) {
+    .tile .content * {
+        font-size: 15px;
+    }
+
+    .tile {
+        grid-template-columns: minmax(65px, 120px) minmax(10px, 15px) 185px;
+    }
+
+    .tile .image{
+        min-width: 50px;
+        max-width: 81px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .tile div {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .tile {
+        grid-template-columns: minmax(65px, 120px) minmax(5px, 15px) minmax(150px, 185px);
+    }
+}

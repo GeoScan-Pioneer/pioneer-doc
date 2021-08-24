@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".plate").forEach(plate => {
+    document.querySelectorAll(".tile").forEach(plate => {
         plate.addEventListener('click', event => {
             if (plate.style.height == '100px' || plate.style.height == '') {
                 plate.style.height = plate.scrollHeight + 'px'

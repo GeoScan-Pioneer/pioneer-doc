@@ -83,10 +83,12 @@ import sys
 
 sys.path.append(os.path.abspath("./_ext"))
 
-extensions = ['plate']
+extensions = ['tile']
 
-from plate import PlateDirective
-from plate import platenode
+from tile import TileDirective
+from tile import tilenode
+from tile import visit_tile
+from tile import depart_tile
 
 html_theme = 'sphinx_rtd_theme_upgraded'
 html_theme_path = ['_themes', ]
@@ -94,8 +96,8 @@ html_theme_path = ['_themes', ]
 def setup(app):
     app.add_css_file('style.css')
 
-    app.add_node(platenode, html=(PlateDirective.html_platenode, None))
-    app.add_directive('plate', PlateDirective)
+    app.add_node(tilenode, html=(visit_tile, depart_tile))
+    app.add_directive('tile', TileDirective)
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -103,7 +105,8 @@ def setup(app):
 # documentation.
 #
 #html_theme_options = {'logo_only': True,}
-html_theme_options = {'logo_only': True,}
+html_theme_options = {'logo_only': True,
+                      'includehidden': True}
 
 html_logo = "_static/images/logo.png"
 html_favicon = "_static/images/favicon.ico"
@@ -116,10 +119,11 @@ html_static_path = ['_static']
 
 html_css_files = [
     'css/index.css',
+    'css/tiles.css'
 ]
 
 html_js_files = [
-    'js/plates.js',
+    'js/tiles.js',
     'js/index.js'
 ]
 
