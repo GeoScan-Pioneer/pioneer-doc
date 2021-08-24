@@ -1,7 +1,7 @@
 .. """Пионер""" documentation master file, created by
    sphinx-quickstart on Mon Sep 10 13:58:08 2018.
    You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+   contain the root `toctree` directive./
 
 .. _Вернуться на сайт "Пионер": https://www.geoscan.aero/ru/pioneer/
 
