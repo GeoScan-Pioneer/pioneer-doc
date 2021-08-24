@@ -9,6 +9,8 @@ from docutils.parsers.rst import Directive
 from docutils.core import publish_parts
 from rst2html5 import HTML5Writer
 
+from sphinx import addnodes
+
 class platenode(Body, Element):
     pass
 
@@ -67,10 +69,16 @@ class PlateDirective(Directive):
                 if pos >= ind2:
                     toctree_flag = False
 
-        # par = publish_parts(writer=HTML5Writer(), source=rst)['body']
+        body += publish_parts(writer=HTML5Writer(), source=rst)['body']
 
         print('params: ', toctree_params)
         print('sources: ', toctree_sources)
+
+        toc = addnodes.toctree()
+        print("keeeeeeeeeeek: ", toc)
+
+        wrappernode = nodes.compound(classes=['toctree-wrapper1'])
+        wrappernode.append(toc)
 
         node = platenode()
         node['content'] = body

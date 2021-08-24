@@ -1,6 +1,6 @@
-/*.index .toctree-wrapper.compound {*/
-/*    display: none;*/
-/*}*/
+.index .toctree-wrapper.compound {
+    display: none;
+}
 
 .index * {
     font-family: Roboto Light, Lato, proxima-nova, Helvetica Neue, Arial, sans-serif;

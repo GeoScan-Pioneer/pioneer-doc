@@ -107,13 +107,7 @@
 
 
     .. toctree::
-        :maxdepth: 4
-        :caption: Hello
-
-        learning-cases/main-cases
-
-.. toctree::
-        :maxdepth: 4
+        :maxdepth: 3
         :caption: Hello
 
         learning-cases/main-cases
@@ -137,3 +131,16 @@
 Каждый квадрокоптер представляет собой набор для создания и программирования беспилотных летательных аппаратов, который позволит ученикам школ, авиамодельных секций и кружков робототехники освоить полезные навыки и узнать о современных профессиях. С помощью набора Геоскан Пионер Вы сможете интегрировать последние технические достижения в учебный процесс.
 
 `Вернуться на сайт "Пионер"`_
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Содержание:
+
+   instructions/main_instruction
+   module/module_main
+   programming/programming
+   database/main-database
+   downloads/download-main
+   learning-cases/main-cases
+   FAQ
+   changelog
