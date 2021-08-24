@@ -9,10 +9,10 @@
     border-radius: 10px;
     display: grid;
     grid-template-columns: 100px 210px minmax(0, 60px) 15px minmax(330px, auto);
-    grid-template-rows: 100px auto;
+    grid-template-rows: 90px auto;
+    height: 90px;
     align-items: center;
     overflow: hidden;
-    height: 100px;
     transition-property: height;
     transition-duration: 400ms;
     transition-timing-function: ease-in-out;
@@ -36,8 +36,9 @@
 }
 
 .tile hr {
+    margin: 0;
     width: 1px;
-    height: 90px;
+    height: 90%;
     border: 0;
     background-color: black;
     transition-property: background-color;
@@ -55,9 +56,12 @@
 }
 
 .tile .image {
-    width: 81px;
-    min-width: 81px;
-    max-width: 81px;
+    width: 65px;
+    min-width: 65px;
+    max-width: 65px;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
 }
 
 .tile .content {
@@ -112,12 +116,12 @@
     }
 
     .tile {
-        grid-template-columns: minmax(65px, 120px) minmax(10px, 15px) 185px;
+        grid-template-columns: minmax(50px, 120px) minmax(10px, 15px) 185px;
     }
 
     .tile .image{
-        min-width: 50px;
-        max-width: 81px;
+        min-width: 40px;
+        max-width: 65px;
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -129,6 +133,6 @@
 
 @media (max-width: 320px) {
     .tile {
-        grid-template-columns: minmax(65px, 120px) minmax(5px, 15px) minmax(150px, 185px);
+        grid-template-columns: minmax(50px, 120px) minmax(5px, 15px) minmax(150px, 185px);
     }
 }
