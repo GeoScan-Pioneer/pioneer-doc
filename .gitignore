@@ -6,3 +6,6 @@
 .idea/modules.xml
 .idea/pioneer-doc.iml
 .idea/vcs.xml
+.idea/*
+_build/*
+_build.rar
