@@ -220,7 +220,7 @@ PLA-пластик, как отвечающий требованиям по жё
 
 Рисунок 22 - Уставленная защита винтов
 
-Ссылка на скачивание stl модели: www.yandexdisk.fff
+Ссылка на скачивание stl модели: https://www.thingiverse.com/thing:4941296
 
 .. |image0| image:: media/image0.jpg
    :width: 2in
