@@ -119,7 +119,9 @@ html_static_path = ['_static']
 
 html_css_files = [
     'css/index.css',
-    'css/tiles.css'
+    'css/tiles.css',
+    'css/cont_grid_layout.css',
+    'css/gallery_layout.css'
 ]
 
 html_js_files = [

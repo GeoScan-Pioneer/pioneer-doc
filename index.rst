@@ -1,7 +1,7 @@
 .. """Пионер""" documentation master file, created by
    sphinx-quickstart on Mon Sep 10 13:58:08 2018.
    You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive./
+   contain the root `toctree` directive.
 
 .. _Вернуться на сайт "Пионер": https://www.geoscan.aero/ru/pioneer/
 
@@ -42,25 +42,54 @@
 Документация Геоскан "Пионер"
 =================================
 
-| Геоскан "Пионер" - это линейка многофункциональных образовательных квадрокоптеров. Их можно использовать как учебную платформу в школе, авиамодельной секции, кружке робототехники или дома.
+.. raw:: html
 
-Каждый квадрокоптер представляет собой набор для создания и программирования беспилотных летательных аппаратов, который позволит ученикам школ, авиамодельных секций и кружков робототехники освоить полезные навыки и узнать о современных профессиях. С помощью набора Геоскан Пионер Вы сможете интегрировать последние технические достижения в учебный процесс.
+    <div class="grid-content-layout">
+        <div class="grid-content div-p1"> <p> Геоскан "Пионер" - это линейка многофункциональных образовательных квадрокоптеров. Их можно использовать как учебную платформу в школе, авиамодельной секции, кружке робототехники или дома. </p> </div>
 
-На данный момент в линейке представлено три модели:
+        <div class="grid-content div-p2">
+            <p> Каждый квадрокоптер представляет собой набор для создания и программирования беспилотных летательных аппаратов, который позволит ученикам школ, авиамодельных секций и кружков робототехники освоить полезные навыки и узнать о современных профессиях. </p>
+            <p> С помощью набора Геоскан Пионер Вы сможете интегрировать последние технические достижения в учебный процесс. </p>
+        </div>
 
-.. csv-table::
+        <div class="grid-content div-p3">
+            <p> С "Пионером" вы сможете: </p>
+            <ul>
+                <li> изучить основы робототехники и авионики; </li>
+                <li> узнать, как устроен квадрокоптер; </li>
+                <li> научиться управлять им; </li>
+                <li> адаптировать платформу под разные задачи; </li>
+                <li> освоить азы программирования. </li>
+            </ul>
+        </div>
+    </div>
 
-   "|pioneer|", "|pioneermini|", "|pioneermax|"
-    "`Пионер стандарт`_", "`Пионер Мини`_", "`Пионер Макс`_"
+.. raw:: html
 
+    <div class="gallery-layout">
+        <div class="content">
+            <div class="gallery-element">
+                <a href="./instructions/pioneer-standart/main-standart.html">
+                    <div class="image"> <img src="_static/images/pioneer.png" > </div>
+                    <div class="head"> <p>Пионер Стандарт</p> </div>
+                </a>
+            </div>
 
-С "Пионером" вы сможете:
+            <div class="gallery-element">
+                <a href="./instructions/pioneer-mini/main-mini.html">
+                    <div class="image"> <img src="_static/images/pioneermini.png" > </div>
+                    <div class="head"> <p>Пионер Мини</p> </div>
+                </a>
+            </div>
 
-*	изучить основы робототехники и авионики;
-*	узнать, как устроен квадрокоптер;
-*	научиться управлять им;
-*	адаптировать платформу под разные задачи;
-*	освоить азы программирования.
+            <div class="gallery-element">
+                <a href="./instructions/pioneer-max/main-max.html">
+                    <div class="image"> <img src="_static/images/pioneer-max.png" > </div>
+                    <div class="head"> <p>Пионер Макс</p> </div>
+                </a>
+            </div>
+        </div>
+    </div>
 
 .. tile::
     :icon: _static/images/instructions.png
