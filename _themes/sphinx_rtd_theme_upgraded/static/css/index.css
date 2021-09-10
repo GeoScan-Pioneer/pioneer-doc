@@ -1,0 +1,44 @@
+.index * {
+    font-family: Roboto Light, Lato, proxima-nova, Helvetica Neue, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.index h1 {
+    font-size: 48px;
+}
+
+.wy-nav-content {
+    min-width: 270px;
+    background-color: #f6f6f6;
+}
+
+.margin-bot {
+    margin-bottom: 10px !important;
+}
+
+@media (max-width: 415px), (max-height: 415px) {
+
+    .index * {
+        font-size: 17px;
+    }
+
+    .index h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 360px) {
+    .index * {
+        font-size: 12px !important;
+    }
+
+    .index * p,
+    .index * ul {
+        line-height: 18px !important;
+    }
+
+    .index h1 {
+        font-size: 24px !important;
+    }
+}

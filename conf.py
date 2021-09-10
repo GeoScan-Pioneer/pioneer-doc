@@ -59,6 +59,7 @@ extensions = [
     'sphinx.ext.doctest',
 ]
 
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -92,10 +93,26 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+import os
+import sys
+
+sys.path.append(os.path.abspath("./_ext"))
+
+extensions = ['tile']
+
+from tile import TileDirective
+from tile import tilenode
+from tile import visit_tile
+from tile import depart_tile
+
+html_theme = 'sphinx_rtd_theme_upgraded'
+html_theme_path = ['_themes', ]
 
 def setup(app):
     app.add_css_file('style.css')
+
+    app.add_node(tilenode, html=(visit_tile, depart_tile))
+    app.add_directive('tile', TileDirective)
 
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -103,7 +120,8 @@ def setup(app):
 # documentation.
 #
 #html_theme_options = {'logo_only': True,}
-html_theme_options = {'logo_only': True,}
+html_theme_options = {'logo_only': True,
+                      'includehidden': True}
 
 html_logo = "_static/images/logo.png"
 html_favicon = "_static/images/favicon.ico"
@@ -113,6 +131,18 @@ html_show_sphinx = False
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+html_css_files = [
+    'css/index.css',
+    'css/tiles.css',
+    'css/cont_grid_layout.css',
+    'css/gallery_layout.css'
+]
+
+html_js_files = [
+    'js/tiles.js',
+    'js/index.js'
+]
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
