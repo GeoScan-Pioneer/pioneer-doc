@@ -1,0 +1,142 @@
+:root {
+    --tile-height: 90px;
+}
+
+.tile .toctree-wrapper.compound {
+    display: block;
+}
+
+.tile {
+    margin-bottom: 24px;
+    background-color: white;
+    box-shadow: 0px 2px 23px -15px rgba(0,0,0,20);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 100px 210px minmax(0, 60px) 15px minmax(330px, auto);
+    grid-template-rows: var(--tile-height) auto;
+    height: var(--tile-height);
+    align-items: center;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+
+.tile div {
+    margin: 15px;
+}
+
+.tile p {
+    margin: 0px;
+    transition-property: color;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+    color: black;
+}
+
+.tile.large .header p,
+.tile.large .caption p {
+    color: #E15D2B;
+}
+
+.tile hr {
+    margin: 0;
+    width: 1px;
+    height: 90%;
+    border: 0;
+    background-color: black;
+    transition-property: background-color;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+}
+
+.tile.large hr {
+    background-color: #E15D2B;
+}
+
+.tile .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.tile .image {
+    width: 65px;
+    min-width: 65px;
+    max-width: 65px;
+    margin: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+.tile .content {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 10px;
+}
+
+.tile .content p {
+    margin-bottom: 10px;
+}
+
+.tile .content img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1100px) {
+    .tile {
+        grid-template-columns: minmax(120px, 190px) 15px minmax(185px, auto);
+    }
+
+    .tile .caption,
+    .tile .spacer {
+        display: none;
+    }
+
+    .tile hr {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .tile .image {
+        width: auto;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .tile .content img {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 415px), (max-height: 415px) {
+    .tile .content * {
+        font-size: 15px;
+    }
+
+    .tile {
+        grid-template-columns: minmax(50px, 120px) minmax(10px, 15px) 185px;
+    }
+
+    .tile .image{
+        min-width: 30px;
+        max-width: 65px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .tile div {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .tile {
+        grid-template-columns: minmax(50px, 70px) minmax(5px, 15px) minmax(150px, 185px);
+    }
+}
