@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Pioneer'
-copyright = '2020, Geoscan LTD'
+copyright = '2021, Geoscan LTD'
 author = 'Geoscan LTD'
 
 # The short X.Y version
-version = '2.3'
+version = '2.4'
 # The full version, including alpha/beta/rc tags
-release = 'November update'
+release = 'September update 2021'
 
 # Здесь перечисляются множественные подстановки, которые при билде будут объявлятся в конце страницы (версии,ссылки и.т.д) ----
 
