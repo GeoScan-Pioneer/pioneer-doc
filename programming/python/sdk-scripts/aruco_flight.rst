@@ -16,8 +16,9 @@
 **drone_flight** – за управление квадрокоптером.
 
 .. figure:: media/image1.PNG
-    :scale:  80%
-    :align: center
+   :align: center
+   :scale:  80%
+
 
     Рисунок 1 - Принципиальная схема работы алгоритма
 
@@ -26,8 +27,9 @@
 заходит на посадку.
 
 .. figure:: media/image2.PNG
-    :scale:  80%
-    :align: center
+   :align: center
+   :scale:  80%
+
 
     Рисунок 2 - Распределение потоков
 
@@ -40,8 +42,8 @@
 проекция от него, чтобы держаться на определённом растяни от маркера.
 
 .. figure:: media/image3.PNG
-    :scale:  50%
-    :align: center
+   :align: center
+   :scale:  50%
 
     Рисунок 3 - Оси квадрокоптера и маркера
 
