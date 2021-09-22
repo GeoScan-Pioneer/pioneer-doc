@@ -62,6 +62,8 @@ ______
 
 **Устаревшие:**
 
+* `Pioneer Mini 1.6.7482 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__
+
 * `Pioneer Mini 1.6.7257 <https://disk.yandex.ru/d/WPgcrfgPKFpHBg>`__
 
 * `Pioneer Mini 1.6.7459 <https://disk.yandex.ru/d/vjykKgJVmepbZQ>`__ (Добавлена поддержка pioneer_sdk и программирования на Python)
