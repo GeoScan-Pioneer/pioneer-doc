@@ -33,7 +33,7 @@
 3. Скачайте архив ESPTOOL, в нем содержится утилита для прошивки контроллера ESP-32
 
 
-`ESPTOOL 4.0 <https://disk.yandex.ru/d/38Mv501QhQ813A>`__
+`ESPTOOL 2.0 <https://disk.yandex.ru/d/NlfoYzQNMSQxoQ>`__
 
 .. attention:: Рекомендуется запускать на ОС Windows 10.
 
@@ -46,7 +46,7 @@
 
 .. attention:: Перед этим вам необходимо закрыть программу Pioneer Station, если она у вас открыта.
 
-.. attention:: В случае работы с ESPTOOL 4.0 запускать рекомендуется через файл *runiterative*
+.. attention:: В случае работы с ESPTOOL 2.0 запускать необходимо через файл *runiterative*
 
 .. figure:: media/esp32/esptool-start.PNG
    :align: center
