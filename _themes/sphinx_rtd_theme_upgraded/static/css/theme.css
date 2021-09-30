@@ -4265,6 +4265,10 @@ a .wy-menu-vertical li span.toctree-expand {
 }
 
 @media screen and (max-width:768px) {
+	.wy-nav-content {
+		max-width: 100% !important;
+	}
+
 	.wy-tray-container {
 		bottom: auto;
 		top: 0;

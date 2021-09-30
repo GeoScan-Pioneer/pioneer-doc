@@ -29,7 +29,7 @@
 .tile p {
     margin: 0px;
     transition-property: color;
-    transition-duration: 400ms;
+    transition-duration: 200ms;
     transition-timing-function: ease-in-out;
     color: black;
 }
@@ -46,7 +46,7 @@
     border: 0;
     background-color: black;
     transition-property: background-color;
-    transition-duration: 400ms;
+    transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 }
 
@@ -85,6 +85,15 @@
     margin-bottom: 15px;
 }
 
+
+.tile:hover .header p,
+.tile:hover .caption p {
+    color: #E15D2B;
+}
+
+.tile:hover hr {
+    background-color: #E15D2B;
+}
 @media (max-width: 1100px) {
     .tile {
         grid-template-columns: minmax(120px, 190px) 15px minmax(185px, auto);
