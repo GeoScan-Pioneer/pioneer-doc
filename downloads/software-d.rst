@@ -161,7 +161,8 @@ ______
 
 **Стабильные:**
 
-* `Параметры АП для Pioneer Max <https://disk.yandex.ru/d/WkG_Wph_brs2jA>`__
+* `Параметры АП для Pioneer Max <https://disk.yandex.ru/d/IrWVG9xBmZaenw>`__ / Файл readme обязателен к прочтению!
+
 
 **Тестовые:**
 
