@@ -1,0 +1,15 @@
+Подключение по SSH
+==================
+
+.. attention:: Для подключения по ssh с Windows потребуется `установить OpenSSH <https://docs.microsoft.com/ru-ru/windows-server/administration/openssh/openssh_install_firstuse>`_
+
+Данные о пользователе
+---------------------
+    * **Логин: ubuntu**
+    * **Пароль: geoscan123**
+
+Пример подключения
+-------------------
+    *ssh ubuntu@10.0.0.31*
+
+.. скрин терминала с ssh
