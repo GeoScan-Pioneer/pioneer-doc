@@ -13,5 +13,4 @@
    terminal_basics
    network
    linux_services
-   ethernet
    ros_web_menu
