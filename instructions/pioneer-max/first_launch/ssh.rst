@@ -1,6 +1,9 @@
 Подключение по SSH
 ==================
 
+Для использования терминала операционной системы, ввода команд, работы с файлами и директивами можно воспользоваться SSH подключением.
+
+
 .. attention:: Для подключения по ssh с Windows потребуется `установить OpenSSH <https://docs.microsoft.com/ru-ru/windows-server/administration/openssh/openssh_install_firstuse>`_
 
 Данные о пользователе
