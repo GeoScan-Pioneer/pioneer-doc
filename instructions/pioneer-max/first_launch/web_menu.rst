@@ -18,6 +18,7 @@ WebMenu - страница для визуальной навигации меж
 Подробнее об инструментах:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * :doc:`butterfly` 
-.. * :doc:`../Programming/code_oss`
-* :doc:`../../programming/pioneer_max/bricks/bricks_main` 
+* :doc:`../../../programming/pioneer_max/bricks/bricks_main` 
 * :doc:`ros_web_menu` 
+
+.. * :doc:`../Programming/code_oss`
