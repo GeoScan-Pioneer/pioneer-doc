@@ -32,19 +32,15 @@
 
     sudo systemctl disable <название сервиса>  
 
-.. table:: Названия сервисов
+.. csv-table:: Названия сервисов
+   :header: "Утилита", "wlan0", "eth"
+   :widths: 15, 20, 20
 
-    +---------------+----------------------+---------------------+
-    | Утилита       |          wlan0       |           eth       |
-    +===============+======================+=====================+
-    | Butterfly     |     wlan-butterfly   |     eth-butterfly   |
-    +---------------+----------------------+---------------------+
-    | Code-OSS      |     code-server-wlan |     code-server-eth |
-    +---------------+----------------------+---------------------+
-    | WebMenu       |     web-wlan-menu    |     web-eth-menu    |
-    +---------------+----------------------+---------------------+
-    | MissionControl| mission-control-wlan | mission-control-eth |
-    +---------------+----------------------+---------------------+
+    "Butterfly","wlan-butterfly","eth-butterfly"
+    "Code-OSS","code-server-wlan","code-server-eth"
+    "WebMenu","web-wlan-menu","web-eth-menu"
+    "MissionControl","mission-control-wlan","mission-control-eth"
+
 
 Пример использования:
 
