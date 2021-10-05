@@ -222,6 +222,9 @@ PLA-пластик, как отвечающий требованиям по жё
 
 Ссылка на скачивание stl модели: https://www.thingiverse.com/thing:4941296
 
+
+Ссылка на скачивание stl модели (Защита по мотивам фантастической вселенной): https://www.thingiverse.com/thing:4982440
+
 .. |image0| image:: media/image0.jpg
    :width: 2in
    :height: 2in
