@@ -1,0 +1,3 @@
+[submodule "programming/python/pioneer_sdk"]
+	path = programming/python/pioneer_sdk
+	url = https://github.com/DgtalCode/pioneer_sdk
