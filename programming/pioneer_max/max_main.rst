@@ -13,4 +13,5 @@
 
    bricks/bricks_main
    utils/utils_main
+   python-api/python-api-main
    
