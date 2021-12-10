@@ -8,7 +8,7 @@
 
 Чтобы установить программу, нажмите `скачать TRIK Studio`_ и запустите загруженный .exe файл
 
-.. _скачать TRIK Studio: https://dl.geoscan.aero/pioneer/upload/TRIKStudio/trik-studio-offline-installer.exe
+.. _скачать TRIK Studio: https://trikset.com/products/trik-studio#download
 
 Для синхронизации с "Пионером" вам понадобится :doc:`../pioneer_station/pioneer_station_main`. 
 
