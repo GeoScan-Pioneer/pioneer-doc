@@ -107,3 +107,8 @@
 
 	Позволяет получить показания с дальномера.
 
+..
+    пример подключения кода из сабмодуля
+     literalinclude:: ./pioneer_sdk/pioneer_sdk/piosdk.py
+        language: python
+        pyobject: Pioneer.get_raw_video_frame
