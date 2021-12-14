@@ -11,6 +11,14 @@
 .. image:: ./media/work-gif.gif
    :width: 1800
 
+Проект доступен на `GitHub`_:
+
+::
+
+    git clone https://github.com/DgtalCode/parking_finder.git
+
+.. _GitHub: https://github.com/DgtalCode/parking_finder
+
 Установка компонентов
 ---------------------
 
