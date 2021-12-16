@@ -72,5 +72,3 @@
    const/max-const_main
    settings/max-settings_main
    flight/max-flight
-   first_launch/first_launch_main
-   

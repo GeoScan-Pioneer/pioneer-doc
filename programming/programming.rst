@@ -13,6 +13,5 @@
    /programming/pioneer_station/pioneer_station_main
    /programming/lua/lua_main
    python/python_main
-   pioneer_max/max_main
    
 
