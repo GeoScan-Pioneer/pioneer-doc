@@ -9,9 +9,9 @@ Butterfly Web Terminal
 Открыть Butterfly можно с помощью кнопки в Web Menu
 
 .. image:: ../const/media/butterfly/tab.png
-    :alt: Похоже, картинка не загрузилась :c 
-    :align: center
-    :scale: 100%
+   :alt: Похоже, картинка не загрузилась :c 
+   :align: center
+   :scale: 100%
 
 Также можно открыть Butterfly введя в адресную строку браузера <ip коптера>:8090
 
@@ -21,17 +21,17 @@ Butterfly Web Terminal
 По умолчанию **ubuntu**
 
 .. image:: ../const/media/butterfly/login.png
-    :alt: Похоже, картинка не загрузилась :c 
-    :align: center
-    :scale: 75%
+   :alt: Похоже, картинка не загрузилась :c 
+   :align: center
+   :scale: 75%
 
 Далее нажмите Enter, введите системный пароль, и снова нажмите Enter.
 По умолчанию **geoscan123**
 
 .. image:: ../const/media/butterfly/password.png
-    :alt: Похоже, картинка не загрузилась :c 
-    :align: center
-    :scale: 75%
+   :alt: Похоже, картинка не загрузилась :c 
+   :align: center
+   :scale: 75%
 
 .. attention:: Пароль не будет отображаться при вводе. Если вы ввели неправильный пароль, перезагрузите страницу в браузере и проделайте авторизацию ещё раз.
 
