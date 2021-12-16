@@ -1,6 +1,8 @@
+..
+    git submodule update --remote
+
 Программирование на Python
 ==========================
-
 
 .. image:: /_static/images/programming.png
 

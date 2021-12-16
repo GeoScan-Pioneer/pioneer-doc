@@ -60,7 +60,7 @@ Lua документация по API
     :param longitude: задается долгота в градусах, умноженных на :math:`10^{-7}`;
     :param altitude: задается высота в метрах.
 
-    Пример `ap.goToPoint(600859810, 304206500, 50)`
+    Пример `ap.goToPoint(60.0859810, 30.4206500, 50)`
 
 .. function:: ap.goToLocalPoint(x, y, z , time)
 
