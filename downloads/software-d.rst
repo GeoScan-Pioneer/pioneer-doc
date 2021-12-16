@@ -62,6 +62,8 @@ ______
 
 **Устаревшие:**
 
+* `Pioneer Mini 1.6.7482 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__
+
 * `Pioneer Mini 1.6.7257 <https://disk.yandex.ru/d/WPgcrfgPKFpHBg>`__
 
 * `Pioneer Mini 1.6.7459 <https://disk.yandex.ru/d/vjykKgJVmepbZQ>`__ (Добавлена поддержка pioneer_sdk и программирования на Python)
@@ -83,6 +85,8 @@ ______
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Стабильные:**
+
+* ESPTOOL 2.0 с параметрами автопилота 0014 - `ESPTool 2.0 <https://disk.yandex.ru/d/rJ2pVA3T9UARLA>`__
 
 **Устаревшие:**
 
@@ -115,6 +119,8 @@ _______
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Стабильные:**
+
+* `Параметры АП Pioneer Mini 1.0.0014 <https://disk.yandex.ru/d/LOHZoIZ45vNV2Q>`__ (Для АП 1.6.7747 и новее)
 
 * `Параметры АП Pioneer Mini 1.0.0012 <https://disk.yandex.ru/d/AKSr6SCzZXvziQ>`__ (Для работы с Python + Mavlink и АП 1.6.7482 и новее)
 
@@ -155,7 +161,8 @@ ______
 
 **Стабильные:**
 
-* `Параметры АП для Pioneer Max <https://disk.yandex.ru/d/WkG_Wph_brs2jA>`__
+* `Параметры АП для Pioneer Max <https://disk.yandex.ru/d/IrWVG9xBmZaenw>`__ / Файл readme обязателен к прочтению!
+
 
 **Тестовые:**
 
