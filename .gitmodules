@@ -3,4 +3,4 @@
 	url = https://github.com/DgtalCode/pioneer_sdk
 [submodule "learning-cases/parking-finder/parking_finder"]
 	path = learning-cases/parking-finder/parking_finder
-	url = https://github.com/DgtalCode/parking_finder.git
+	url = https://github.com/GeoScan-Pioneer/parking_finder
