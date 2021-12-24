@@ -1,6 +1,3 @@
 [submodule "programming/python/pioneer_sdk"]
 	path = programming/python/pioneer_sdk
 	url = https://github.com/DgtalCode/pioneer_sdk
-[submodule "learning-cases/parking-finder/parking_finder"]
-	path = learning-cases/parking-finder/parking_finder
-	url = https://github.com/GeoScan-Pioneer/parking_finder
