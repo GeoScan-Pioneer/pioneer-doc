@@ -11,6 +11,7 @@
 
 Состав пакета
 -------------------------
+
 Классы
 ~~~~~~~
 * Logger
@@ -46,6 +47,7 @@ Logger
 
 Доступные поля класса
 """"""""""""""""""""""""""""""""""""""""
+
     * __log_service - rospy.ServiceProxy: gs_interfaces.srv.Log
     * __log_sub - rospy.Subscriber: std_msgs.msg.String
 
