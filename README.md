@@ -6,3 +6,4 @@
 В документации собраны все основные сведения о квадрокоптере, дополнительных модулях и возможностях их программирования.  
 
 ![alt text](https://pioneer-doc.readthedocs.io/ru/master/_images/pioneer.png "Geoscan Pioneer")
+
