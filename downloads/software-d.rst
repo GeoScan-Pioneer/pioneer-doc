@@ -101,7 +101,9 @@ _______
 
 **Стабильные:**
 
-* `Pioneer Max 1.6.7185 <https://drive.google.com/uc?export=download&confirm=no_antivirus&id=13Qm2YY8UcYd9dDmOfHSlHRpk7JiuzOxo>`_
+* |fw_ap_max|
+
+* `Pioneer Max 1.6.7185 для ROS <https://drive.google.com/uc?export=download&confirm=no_antivirus&id=13Qm2YY8UcYd9dDmOfHSlHRpk7JiuzOxo>`_
 
 **Тестовые:**
 
@@ -161,8 +163,9 @@ ______
 
 **Стабильные:**
 
-* `Параметры АП для Pioneer Max <https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1h7_B2DjN7hiN_PCSxYsdqPgXFBfr_AHK>`_
+* `Параметры АП для Pioneer Max <https://disk.yandex.ru/d/IrWVG9xBmZaenw>`__ / Файл readme обязателен к прочтению!
 
+* `Параметры АП для Pioneer Max <https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1h7_B2DjN7hiN_PCSxYsdqPgXFBfr_AHK>`_
 
 **Тестовые:**
 
