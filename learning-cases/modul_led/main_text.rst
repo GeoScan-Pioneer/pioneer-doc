@@ -36,9 +36,5 @@
 
 
 .. |image0| image:: media/work_complect.jpg
-   :width: 2in
-   :height: 2in
-.. |image1| image:: media/image1.jpg
-   :width: 2in
-   :height: 2in
+   :scale: 80%
 

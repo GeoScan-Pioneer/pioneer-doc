@@ -27,7 +27,7 @@
 3. Скачайте архив ESPTOOL, в нем содержится утилита для прошивки контроллера ESP-32
 
 
-`ESPTOOL 2.0 c версией прошивки 0.4.5 <https://disk.yandex.ru/d/ymscegzZ7uD4RA>`__
+`ESPTOOL с прошивкой ESP 0.4.5 и параметрами автопилота 0014 <https://disk.yandex.ru/d/ymscegzZ7uD4RA>`__
 
 .. attention:: Рекомендуется запускать на ОС Windows 10.
 
