@@ -86,7 +86,7 @@ ______
 
 **Стабильные:**
 
-* ESPTOOL 2.0 с параметрами автопилота 0014 - `ESPTool 2.0 <https://disk.yandex.ru/d/rJ2pVA3T9UARLA>`__
+* ESPTOOL с прошивкой ESP 0.4.5 и параметрами автопилота 0014 - `ESPTool 0.4.5 <https://disk.yandex.ru/d/ymscegzZ7uD4RA>`__
 
 **Устаревшие:**
 
