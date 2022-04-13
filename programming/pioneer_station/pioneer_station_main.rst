@@ -1,11 +1,6 @@
 Pioneer Station
 ===============
 
-
-.. image:: /_static/images/pioneer_station.png
-	:align: center
-
-
 Программа **Pioneer station** - это удобный инструмент работы с квадрокоптером. Она позволяет:
 
 * `Обновлять прошивку квадрокоптера`_
@@ -13,33 +8,29 @@ Pioneer Station
 * `Разрабатывать и загружать полетные задания`_
 * Запускать скрипты для тестирования
 
+.. raw:: html
 
-.. _Обновлять прошивку квадрокоптера: ../../settings/firmware_upgrade.html
+   <div style="position: relative; padding-bottom: 50%; overflow: hidden; margin-bottom:30px;margin-left: 0px;margin-right: 0px;">
+        <iframe src="https://www.youtube.com/embed/DlKndi1Vi7U" allowfullscreen="" style="position: absolute; width:100%; height: 100%;" frameborder="0"></iframe>
+   </div>
 
-.. _Настроить параметры автопилота: ../../settings/autopilot_parameters.html
+Чтобы установить программу, нажмите `скачать Pioneer station`_ и запустите загруженный .exe файл.
 
-.. _Разрабатывать и загружать полетные задания: pioneer_station_upload.html
-
-Чтобы установить программу, нажмите `скачать Pioneer station`_ и запустите загруженный .exe файл
-
-.. _скачать Pioneer station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe
+Если вы используете ОС Linux, скачайте и распакуйте `архив PioneerStationLinux64`_
 
 .. note::
 	Если программа не запускается попробуйте `скачать 32bit версию`_, распаковать архив и запустить run.bat.
 
-
-Если вы используете ОС Linux, скачайте и распакуйте `архив PioneerStationLinux64`_
-
+.. _Обновлять прошивку квадрокоптера: ../../settings/firmware_upgrade.html
+.. _Настроить параметры автопилота: ../../settings/autopilot_parameters.html
+.. _Разрабатывать и загружать полетные задания: pioneer_station_upload.html
+.. _скачать Pioneer station: https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe
 .. _архив PioneerStationLinux64: https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationLinux64.zip
-
-
 .. _скачать 32bit версию: https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip
 
 
-
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Содержание:
 
    pioneer_station_work
