@@ -1,8 +1,3 @@
-.. """Пионер""" documentation master file, created by
-   sphinx-quickstart on Mon Sep 10 13:58:08 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 .. _Вернуться на сайт "Пионер": https://www.geoscan.aero/ru/pioneer/
 
 .. _Пионер стандарт: instructions/pioneer-standart/main-standart.html
@@ -96,13 +91,13 @@
     :head: Инструкции по эксплуатации
     :caption: Соберите и настройте квадрокоптер для первого полета!
 
-    В данном разделе вы найдете основную информацию для первой сборки и настройки квадрокоптера для первого полёта.
-
     На данный момент в линейке представлено три модели:
 
     * Пионер мини
     * Пионер стандарт
     * Пионер макс
+
+    В этих разделах вы найдете основную информацию для первой сборки и настройки квадрокоптера для первого полёта.
 
     .. toctree::
         :maxdepth: 2
