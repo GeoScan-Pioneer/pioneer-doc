@@ -3,6 +3,12 @@
 
 На данной странице вы найдете информацию как подключить Bluetooth геймпад (джойстик) к вашему смартфону, чтобы через него управлять квадрокоптером. Обратите внимание что данный джойстик работает только в связке с телефоном на котором запущено приложение Geoscan Jump.
 
+.. raw:: html
+
+   <div style="position: relative; padding-bottom: 50%; overflow: hidden; margin-bottom:30px;margin-left: 0px;margin-right: 0px;">
+        <iframe src="https://www.youtube.com/embed/R4OvxN0pbu4" allowfullscreen="" style="position: absolute; width:100%; height: 100%;" frameborder="0"></iframe>
+   </div>
+
 Первое подключение и привязка
 -----------------------------
 

@@ -1,20 +1,16 @@
 Сборка квадрокоптера
 ====================
 
-В наборе "Пионер Мини" есть все элементы и инструменты для сборки.
-
 .. tip:: Прежде чем приступить к сборке квадрокоптера, подготовьте удобное рабочее место. В наборе присутствуют мелкие детали, поэтому позаботьтесь о том, чтобы не потерять их при сборке.
-
-Видеоинструкция по сборке квадрокоптера Пионер Мини.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/wvtuh09em84" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <div style="position: relative; padding-bottom: 50%; overflow: hidden; margin-bottom:30px;margin-left: 0px;margin-right: 0px;">
+        <iframe src="https://www.youtube.com/embed/kcpqJvpiwjI" allowfullscreen="" style="position: absolute; width:100%; height: 100%;" frameborder="0"></iframe>
+   </div>
 
-
-Инструкция по сборке квадрокоптера Пионер Мини.
------------------------------------------------
+Пошаговая сборка квадрокоптера Пионер Мини.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Шаг 1**
 

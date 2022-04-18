@@ -111,11 +111,10 @@
 
 9. Скрипт необходимо добавить в список конфигураций, который находится в правом верхнем углу.
 
-.. figure:: media/image12.png
+.. figure:: media/image13.png
    :align: center
 
-
-.. figure:: media/image13.png
+.. figure:: media/image12.png
    :align: center
 
 Здесь необходимо указать путь к скрипту.

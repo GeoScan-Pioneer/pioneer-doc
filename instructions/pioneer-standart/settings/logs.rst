@@ -3,6 +3,12 @@
 
 С момента запуска моторов автопилот Пионера записывает параметры полёта по отдельным каналам и сохраняет их в файл, который можно скачать и проанализировать. Запись лога прекращается в момент отключения моторов. При повторном запуске моторов предыдущий лог стирается, и начинается запись нового. 
 
+.. raw:: html
+
+   <div style="position: relative; padding-bottom: 50%; overflow: hidden; margin-bottom:30px;margin-left: 0px;margin-right: 0px;">
+        <iframe src="https://www.youtube.com/embed/718l9CTVaik" allowfullscreen="" style="position: absolute; width:100%; height: 100%;" frameborder="0"></iframe>
+   </div>
+
 Скачивание файла лога
 ---------------------
 
