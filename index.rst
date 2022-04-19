@@ -168,4 +168,4 @@
     knowledge_base/knowledge_base_main
     downloads/downloads_main
     learning_cases/learning_cases_main
-    FAQ/FAQ_main
+    faq/faq_main
