@@ -1,37 +1,4 @@
-.. _Вернуться на сайт "Пионер": https://www.geoscan.aero/ru/pioneer/
-
-.. _Пионер стандарт: instructions/pioneer-standart/main-standart.html
-
-.. _Пионер Мини: instructions/pioneer-mini/main-mini.html
-
-.. _Пионер Макс: instructions/pioneer-max/main-max.html
-
-.. _"Программирование": programming/programming.html
-
-.. _"Инструкции": instructions/main_instruction.html
-
-.. _"модулях": module/module_main.html
-
-.. _"Базу данных": database/main-database.html
-
-.. _"Проекты на Пионере": learning-cases/main-cases.html
-
-.. _"FAQ": FAQ.html
-
-.. |pioneer| image:: _static/images/pioneer.png
-   :width: 250
-
-.. |pioneermini| image:: _static/images/pioneermini.png
-   :width: 250
-
-.. |pioneermax| image:: _static/images/pioneer-max.png
-   :width: 250
-
-
-
-.. raw:: html
-
-    <div class="index">
+.. _На сайт "Пионер": https://www.geoscan.aero/ru/pioneer/
 
 
 Документация Геоскан "Пионер"
@@ -64,21 +31,21 @@
     <div class="gallery-layout">
         <div class="content">
             <div class="gallery-element">
-                <a href="./instructions/pioneer-standart/main-standart.html">
-                    <div class="image"> <img src="_static/images/pioneer.png" > </div>
-                    <div class="head"> <p>Пионер Стандарт</p> </div>
+                <a href="./pioneer-base/pioneer-base_main.html">
+                    <div class="image"> <img src="_static/images/pioneer-base.png" > </div>
+                    <div class="head"> <p>Базовый Пионер</p> </div>
                 </a>
             </div>
 
             <div class="gallery-element">
-                <a href="./instructions/pioneer-mini/main-mini.html">
-                    <div class="image"> <img src="_static/images/pioneermini.png" > </div>
+                <a href="./pioneer-mini/pioneer-mini_main.html">
+                    <div class="image"> <img src="_static/images/pioneer-mini.png" > </div>
                     <div class="head"> <p>Пионер Мини</p> </div>
                 </a>
             </div>
 
             <div class="gallery-element">
-                <a href="./instructions/pioneer-max/main-max.html">
+                <a href="./pioneer-max/pioneer-max_main.html">
                     <div class="image"> <img src="_static/images/pioneer-max.png" > </div>
                     <div class="head"> <p>Пионер Макс</p> </div>
                 </a>
@@ -87,15 +54,15 @@
     </div>
 
 .. tile::
-    :icon: _static/images/instructions.png
+    :icon: _static/images/icon_instructions.png
     :head: Инструкции по эксплуатации
     :caption: Соберите и настройте квадрокоптер для первого полета!
 
     На данный момент в линейке представлено три модели:
 
-    * Пионер мини
-    * Пионер стандарт
-    * Пионер макс
+    * Базовый Пионер
+    * Пионер Мини
+    * Пионер Макс
 
     В этих разделах вы найдете основную информацию для первой сборки и настройки квадрокоптера для первого полёта.
 
@@ -103,26 +70,28 @@
         :maxdepth: 2
         :caption: Содержание:
 
-        instructions/main_instruction
+        pioneer-base/pioneer-base_main
+        pioneer-mini/pioneer-mini_main
+        pioneer-max/pioneer-max_main
 
 .. tile::
-    :icon: _static/images/modules.png
+    :icon: _static/images/icon_modules.png
     :head: Дополнительные модули
     :caption: Расширьте возможности своих летательных аппаратов!
 
     Для подключения используются разъёмы Х1 и Х2 на верхней части платы. Большинство модулей монтируются на плате подключения дополнительных модулей и соединяются с базовой платой шлейфами. Модули GPS и навигации в помещении крепятся напрямую на базовую плату «Пионера».
 
-    .. figure:: _static/images/p_base.png
-        :alt: ../_images/p_base.png
+    .. figure:: _static/images/base.png
+        :alt: Базовая плата
 
     .. toctree::
         :maxdepth: 2
         :caption: Больше о каждом из модулей вы можете узнать на посвященной ему странице:
 
-        module/module_main
+        modules/modules_main
 
 .. tile::
-    :icon: _static/images/code.png
+    :icon: _static/images/icon_programming.png
     :head: Программное обеспечение
     :caption: Научитесь программировать ваш квадрокоптер!
 
@@ -136,10 +105,10 @@
         :maxdepth: 2
         :caption: Содержание:
 
-        programming/programming
+        programming/programming_main
 
 .. tile::
-    :icon: _static/images/books.png
+    :icon: _static/images/icon_theory.png
     :head: База знаний (Теория)
     :caption: Узнайте много интересной информации о БПЛА!
 
@@ -149,10 +118,10 @@
         :maxdepth: 2
         :caption: Содержание:
 
-        database/main-database
+        knowledge_base/knowledge_base_main
 
 .. tile::
-    :icon: _static/images/cloud.png
+    :icon: _static/images/icon_downloads.png
     :head: Загрузки
     :caption: Скачайте необходимые прошивки и ПО!
 
@@ -168,10 +137,10 @@
         :maxdepth: 2
         :caption: Содержание
 
-        downloads/download-main
+        downloads/downloads_main
 
 .. tile::
-    :icon: _static/images/drone.png
+    :icon: _static/images/icon_drone.png
     :head: Методики и кейсы
     :caption: Учитесь и повторите классные проекты от сообщества!
 
@@ -181,20 +150,22 @@
         :maxdepth: 3
         :caption: Содержание:
 
-        learning-cases/main-cases
+        learning_cases/learning_cases_main
 
-`Вернуться на сайт "Пионер"`_
+`На сайт "Пионер"`_
 
 .. toctree::
     :hidden:
     :maxdepth: 2
     :caption: Содержание:
 
-    instructions/main_instruction
-    module/module_main
-    programming/programming
-    database/main-database
-    downloads/download-main
-    learning-cases/main-cases
-    FAQ
-    changelog
+    pioneer-base/pioneer-base_main
+    pioneer-mini/pioneer-mini_main
+    pioneer-max/pioneer-max_main
+    modules/modules_main
+    pioneer_station/pioneer_station_main
+    programming/programming_main
+    knowledge_base/knowledge_base_main
+    downloads/downloads_main
+    learning_cases/learning_cases_main
+    FAQ/FAQ_main

@@ -39,8 +39,10 @@ rst_epilog = """
 .. |fw_opt_board| replace:: `Option Bord 4.0 <https://disk.yandex.ru/d/8M2tgzu0DCV0jw>`__
 .. |fw_USNav| replace:: `Модуль USNav <https://disk.yandex.ru/d/1YYCDEVqNCpBvA>`__
 
-.. |dnld_ps| replace:: `Установщик Pioneer Station <https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe>`__
-.. |dnld_ps32| replace:: `Установщик Pioneer Station 32bit <https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip>`__
+.. |ap_params_base| replace:: `Параметры АП для Pioneer Base <https://disk.yandex.ru/d/Doq-oA6ZwtM9Tw>`__
+
+.. |download_pioneer_station| replace:: `Установщик Pioneer Station <https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe>`__
+.. |download_pioneer_station_32| replace:: `Установщик Pioneer Station 32bit <https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip>`__
 
 """
 
