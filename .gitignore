@@ -9,4 +9,4 @@
 .idea/*
 _build/*
 _build.rar
-_ext/__pycache__/
+_ext/__pycache__
