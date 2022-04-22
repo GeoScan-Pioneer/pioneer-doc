@@ -130,7 +130,7 @@
 
 *Для работы всех (кроме cargo_test.py) требуется запущенная ros_plaz_node из пакета gs_core*
 
-.. code-block::
+.. code-block:: ros
     :caption: Запуск ros_plaz_node с помощью утилиты rospioneer (перед запуском примеров в отдельном окне терминала)
 
     rospioneer start

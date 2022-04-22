@@ -97,12 +97,12 @@ restart.py
 Использование
 -----------------------------
 
-.. code-block::
+.. code-block:: ros
     :caption: Установка порта подключения базовой платы Пионер на /dev/ttyS0
 
     rosparam set ros_plaz_node/port /dev/ttyS0
 
-.. code-block::
+.. code-block:: ros
     :caption: Запуск ros_plaz_node
 
     rosrun gs_core ros_plaz_node.py
