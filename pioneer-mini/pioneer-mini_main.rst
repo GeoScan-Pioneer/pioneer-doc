@@ -15,7 +15,7 @@
    :width: 420
 
 .. tip:: Для Пионера Мини вышло обновление позволяющее программировать квадрокоптер на Python. 
-         Подробнее на странице :doc:`programming/python/python_main`.
+         Подробнее на странице :doc:`/programming/python/python_main`.
                
                
 

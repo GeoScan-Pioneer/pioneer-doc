@@ -53,17 +53,17 @@
 
 *Для работы всех (кроме cargo_test.py) требуется запущенная ros_plaz_node из пакета gs_core*
 
-.. code-block:: ros
+.. code-block::
     :caption: Запуск ros_plaz_node с помощью утилиты rospioneer (перед запуском примеров в отдельном окне терминала)
 
     rospioneer start
 
-.. code-block:: ros
+.. code-block::
     :caption: Запуск примера управления светодиодами напрямую
 
     rosrun gs_example led_test.py --screen
 
-.. code-block:: ros
+.. code-block::
     :caption: Запуск примера управления светодиодами с помощью лаунч файла
 
     roslaunch gs_example test_led.launch --screen

@@ -20,6 +20,6 @@ WebMenu - страница для визуальной навигации меж
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * :doc:`butterfly` 
-* :doc:`/programming/pioneer_max/bricks/bricks_main` 
+* :doc:`/programming/pioneer-max/bricks/bricks_main` 
 * :doc:`ros_web_menu` 
 
