@@ -59,7 +59,7 @@ FAQ
 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Содержание:
+    :maxdepth: 1
+    :caption: Содержание:
 
-   mini-nsu
+    mini_nsu
