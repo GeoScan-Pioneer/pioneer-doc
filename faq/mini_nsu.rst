@@ -69,24 +69,24 @@
 выполнит перезагрузку **Пионера Мини**. Подключение к **Pioneer
 Station** станет снова возможно.
 
-.. |image0| image:: FAQ/media/image1.png
+.. |image0| image:: media/image1.png
    :width: 1.30361in
    :height: 1.17222in
-.. |image1| image:: FAQ/media/image2.png
+.. |image1| image:: media/image2.png
    :width: 3.29444in
    :height: 1.86564in
-.. |image2| image:: FAQ/media/image3.png
+.. |image2| image:: media/image3.png
    :width: 5.73958in
    :height: 4.23398in
-.. |image3| image:: FAQ/media/image4.png
+.. |image3| image:: media/image4.png
    :width: 5.81587in
    :height: 4.26042in
-.. |image4| image:: FAQ/media/image5.png
+.. |image4| image:: media/image5.png
    :width: 5.19792in
    :height: 3.79773in
-.. |image5| image:: FAQ/media/image6.png
+.. |image5| image:: media/image6.png
    :width: 5.76284in
    :height: 3.00000in
-.. |image6| image:: FAQ/media/image7.png
+.. |image6| image:: media/image7.png
    :width: 6.49653in
    :height: 4.64097in
