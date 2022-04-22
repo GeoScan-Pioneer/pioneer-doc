@@ -28,7 +28,7 @@
 
 1. Сохранить утилиту **«minipatcher.exe»** на жесткий диск ПК (ноутбука)
 
-:download:`minipatcher.exe <FAQ/minipatcher.exe>`
+:download:`minipatcher.exe <faq/minipatcher.exe>`
 
 2. Подключить Пионер мини к ПК (ноутбуку) по кабелю USB, включить
    квадрокоптер.
