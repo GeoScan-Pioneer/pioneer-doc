@@ -169,3 +169,4 @@
     downloads/downloads_main
     learning_cases/learning_cases_main
     faq/faq_main
+    support/support_main

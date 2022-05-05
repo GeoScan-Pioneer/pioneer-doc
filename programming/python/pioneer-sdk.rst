@@ -1,11 +1,11 @@
-Описание методов pioneer_sdk
+Описание функций pioneer_sdk
 ============================
 
 На данной странице разобраны методы библиотеки pioneer_sdk.
 
 Примеры скриптов можно найти по `ссылке <https://github.com/geoscan/pioneer_sdk/tree/master/examples>`__.
 
-Страница по настройке среды Pycharm: :doc:`python-sdk-main`
+Страница по настройке среды программирования: :doc:`python_environment`
 
 .. warning:: Страница находится на обновлении.
 
