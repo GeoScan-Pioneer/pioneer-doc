@@ -14,3 +14,5 @@
    sdk-scripts/led_hight_change.rst
    sdk-scripts/lua_script_start.rst
    sdk-scripts/wasd_flight.rst
+   sdk-scripts/manual_speed.rst
+   sdk-scripts/ftp.rst

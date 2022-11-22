@@ -1,0 +1,32 @@
+Объект SPI | Управление SPI
+===========================
+
+.. class:: Spi
+
+    .. method:: new(num, rate, seq, mode)
+
+        Cоздать Spi на порте с настройками.
+
+        :param num: номер Spi
+        :param rate: скорость
+        :param seq: Spi.MSB, Spi.LSB, Spi.MSB_16, Spi.LSB_16, необязательный параметр, по умолчанию Spi.MSB;
+        :param mode: Spi.MODE0, Spi.MODE1, Spi.MODE2, Spi.MODE3, необязательный параметр, по умолчанию Spi.MODE0.
+
+    .. method:: read(self, size)
+
+        Прочитать ``size`` байт.
+
+    .. method:: write(self, data, size)
+
+        Записать данные (data) длиной (size).
+
+    .. method:: exchange(self, data, size)
+
+        Записать данные (data) длиной (size) и прочитать size.
+
+**Пример**
+
+.. code:: lua
+
+    local spi = Spi.new(2, 1000000)
+    spi:exchange("hello", 5) -- записать данные (data) длиной (size) и прочитать size

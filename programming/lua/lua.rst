@@ -1,300 +1,13 @@
 Lua документация по API
 ===========================
 
-.. contents::
+.. contents:: Содержание:
+   :depth: 1
    :local:
+   :backlinks: none
 
 .. highlight:: lua
 
-Описание API функций взаимодействия с автопилотом
-==================================================
-
-.. function:: time()
-
-   Возвращает время с момента включения коптера.
-
-.. function:: deltaTime()
-
-    Возвращает разницу в секундах между временем коптера, которое можно получить функцией :func:`time`, и глобальным временем системы навигации.
-
-
-.. function:: launchTime()
-
-    Возвращает время запуска для системы навигации.
-
-.. function:: sleep(seconds)
-
-    Останавливает выполнение скрипта на заданное время, допустимы дробные значения аргумента.
-    **Рекомендуется использовать** :class:`Timer` **, так как sleep блокирует дальнейшее выполнение скрипта.**
-
-    :param seconds: время сна в секундах.
-
-.. data:: boardNumber
-
-    Получение идентификационного номера борта - доступно через переменную.
-
-**Пример**
-
-.. code:: lua
-
-    local boardNumber = boardNumber
-
-.. function:: ap.push(Event)
-
-   Добавить событие автопилоту (см. :ref:`outluaevent`).
-
-   :param Event: номер события или название (например, ``Ev.COPTER_LANDED``).
-
-**Пример** 
-
-.. code-block:: lua
-
-    Ev.MCE_PREFLIGHT
-    ap.push(Ev.MCE_PREFLIGHT)
-
-.. function:: ap.goToPoint(latitude, longitude, altitude)
-
-     Для полёта с использованием GPS.
-
-    :param latitude: задается широта в градусах, умноженных на :math:`10^{-7}`;
-    :param longitude: задается долгота в градусах, умноженных на :math:`10^{-7}`;
-    :param altitude: задается высота в метрах.
-
-    Пример `ap.goToPoint(60.0859810, 30.4206500, 50)`
-
-.. function:: ap.goToLocalPoint(x, y, z , time)
-
-    Для полёта с использованием локальной системы координат.
-
-    :param x: задается координата точки по оси `x`, в метрах;
-    :param y: задается координата точки по оси `y`, в метрах;
-    :param z: задается координата точки по оси `z`, в метрах;
-    :param time: время, за которое коптер перейдет в следующую точку, в секундах. Если значение не указано, коптер стремится к точке с максимальной скоростью.
-
-    Пример  ``ap.goToLocalPoint(1, 1, 1.2)`` или ``ap.goToLocalPoint(1, 1, 1.2, 10)``
-
-.. function:: ap.updateYaw(angle)
-
-    Установить рыскание.
-
-    :param angle: угол в радианах.
-
-RGB светодиоды
---------------
-
-.. class:: Ledbar
-
-    .. method:: new(Count)
-
-        Cоздать новый Ledbar с заданным количеством светодиодов.
-
-        :param Count: количество светодиодов.
-
-    .. method:: set(self, num, r, g, b)
-
-        Установить цвет на конкретный светодиод.
-
-        :param num: номер светодиода, нумеруются с 0 по 3 на плате, далее последовательно по подключенным модулям;
-        :param r: интенсивность красной компоненты цвета в интервале от [0;1];
-        :param g: интенсивность зеленой компоненты цвета в интервале от [0;1];
-        :param b: интенсивность синей компоненты цвета в интервале от [0;1].
-
-Смотри также :func:`fromHSV`
-
-**Пример** 
-
-К коптеру дополнительно подключен модуль с магнитом, на котором 4 RGB светодиода.
-
-.. code-block:: lua
-
-    local leds = Ledbar.new(8)
-    for i = 0, 3, 1 do
-        leds:set(i, 1, 0, 0)
-    end
-
-    for i = 4, 7, 1 do
-        leds:set(i, 0, 0.5, 0)
-    end
-
-.. function:: fromHSV(hue, saturation, value)
-
-    Конвертирует представление цвета из HSV в RGB. Можно использовать для задания цвета светодиода.
-
-    :param hue: задает цветовой тон. Варьируется в пределах [0;360];
-    :param saturation: задает насыщенность. Варьируется в пределах [0;100];
-    :param value: задает значение цвета. Варьируется в пределах [0;100];
-    :return: Возвращает три компонеты цвета r, g, b.
-
-GPIO
-----
-
-.. class:: Gpio
-
-    .. method:: new(Port, Pin, Mode)
-
-        Cоздать GPIO на порте с настройками.
-
-        :param Port: Gpio.A; Gpio.B; ... Gpio.E;
-        :param Pin: номер пина на порте;
-        :param Mode: Gpio.INPUT, Gpio.Output, Gpio.ALTFU.
-
-    .. method:: read(self)
-
-        Получить значение.
-
-    .. method:: set(self)
-
-        Установить значение в 1.
-
-    .. method:: reset(self)
-
-        Установить значение в 0.
-
-    .. method:: write(self, value)
-
-        :param value: установить значение.
-
-    .. method:: setFunction(self, num)
-
-        Задать номер альтернативной функции.
-
-**Пример** 
-
-.. code-block:: lua
-
-    local pin_name = Gpio.new(Gpio.A, 1, Gpio.OUTPUT)
-    pin_name:read() -- получить значение
-    pin_name:set() -- установить значение 1
-    pin_name:reset() -- установить значение 0 
-    pin_name:write(true) -- установить значение true
-    pin_name:setFunction(1) -- задать номер альтернативной функции
-
-
-UART
-----
-
-.. class:: Uart
-
-    .. method:: new(num, rate, parity, stopBits)
-
-        Cоздать Uart на порте с настройками.
-
-        :param num: номер UART;
-        :param rate: скорость;
-        :param parity: Uart.PARITY_NONE, Uart.PARITY_EVEN, Uart.PARITY_ODD, необязательный параметр, по умолчанию Uart.PARITY_NONE;
-        :param stopBits: Uart.ONE_STOP, Uart.TWO_STOP, необязательный параметр, по умолчанию Uart.ONE_STOP.
-
-    .. method:: read(self, size)
-
-        Прочитать ``size`` байт.
-
-    .. method:: write(self, data, size)
-
-        Записать данные (data) длиной (size).
-
-    .. method:: bytesToRead(self)
-
-        Количество данных доступных для чтения.
-
-    .. method:: setBaudRate(self, rate)
-
-        Установить скорость.
-
-        :param rate: скорость uart.
-
-
-**Пример**
-
-.. code:: lua
-
-    local uart = Uart.new(1, 115200)
-    uart:read(10) -- прочитать 10 байт
-
-
-SPI
----
-
-.. class:: Spi
-
-    .. method:: new(num, rate, seq, mode)
-
-        Cоздать Spi на порте с настройками.
-
-        :param num: номер Spi
-        :param rate: скорость
-        :param seq: Spi.MSB, Spi.LSB, Spi.MSB_16, Spi.LSB_16, необязательный параметр, по умолчанию Spi.MSB;
-        :param mode: Spi.MODE0, Spi.MODE1, Spi.MODE2, Spi.MODE3, необязательный параметр, по умолчанию Spi.MODE0.
-
-    .. method:: read(self, size)
-
-        Прочитать ``size`` байт.
-
-    .. method:: write(self, data, size)
-
-        Записать данные (data) длиной (size).
-
-    .. method:: exchange(self, data, size)
-
-        Записать данные (data) длиной (size) и прочитать size.
-
-**Пример**
-
-.. code:: lua
-
-    local spi = Spi.new(2, 1000000)
-    spi:exchange("hello", 5) -- записать данные (data) длиной (size) и прочитать size
-
-Таймеры
--------
-
-.. class:: Timer
-
-    .. method:: new(sec, func)
-
-        Cоздать новый Timer. 
-
-        :param sec: время интервала в секундах;
-        :param func: функция, которая будет вызываться с заданным интервалом.
-
-    .. method:: start(self)
-
-        Запуcкает таймер.
-
-    .. method:: stop(self)
-
-        Останавливает таймер. При этом остановка уже запущенного таймера произойдет после выполнения функции, стоящей в очереди на выполнение.
-
-    .. method:: callAt(local_time, func)
-
-        Cоздает и запускает новый Timer с функцией, которая будет вызвана один раз.
-
-        :param local_time: локальное время (возвращаемое функцией :func:`time`), указывающее момент вызова функции;
-        :param func: функция, которая будет вызвана.
-
-    .. method:: callLater(delay, func)
-
-        Cоздает и запускает новый Timer с функцией, которая будет вызвана один раз.
-
-        :param delay: время, через которое будет вызвана функция;
-        :param func: функция, которая будет вызвана.
-
-    .. method:: callAtGlobal(global_time, func)
-
-        Cоздает и запускает новый Timer с функцией, которая будет вызвана один раз.
-
-        :param global_time: глобальное время (:func:`time` + :func:`deltaTime`), указывающее момент вызова функции;
-        :param func: функция, которая будет вызвана.
-
-.. note::
-
-    При использовании функций :func:`callAt`, :func:`callLater`, :func:`callAtGlobal` следует обратить внимание,
-    что может быть не более 16 одновременно ожидающих таймеров. Если количество одновременно ожидающих таймеров больше 16, то новый таймер не будет создан.
-
-**Пример**
-
-Смотри :ref:`Example`
-
-.. _OutLuaEvent:
 
 События, отправляемые автопилоту
 --------------------------------
@@ -317,94 +30,9 @@ SPI
 | ENGINES_ARM    | Завести двигатели                         |
 +----------------+-------------------------------------------+
 
-Получение данных от автопилота
-==============================
 
-Для получение данных от автопилота используется класс Sensors
-
-.. class:: Sensors
-
-    .. method:: lpsPosition()
-
-        :return: x, y, z
-
-    .. method:: lpsVelocity()
-
-        :return: vx, vy, vz
-
-    .. method:: lpsYaw()
-
-        :return: yaw
-
-    .. method:: orientation()
-
-        Данные положения.
-
-        :return: roll, pitch, azimuth
-
-    .. method:: altitude()
-
-        Данные высоты по барометру.
-
-        :return: высота в метрах
-
-    .. method:: range()
-
-        Данные c датчиков расстояния.
-
-        :return: Возвращает значения с датчика расстояния. Возвращает несколько значений.
-
-    .. method:: accel()
-
-        Данные c акселерометра.
-
-        :return: ax, ay, az
-
-    .. method:: gyro()
-
-        Данные c гироскопа.
-
-        :return: gx, gy, gz
-
-    .. method:: rc()
-
-        Данные c пульта управления.
-
-        :return: channel1, channel2, channel3, channel4, channel5, channel6, channel7, channel8
-
-**Примеры**
-
-.. code:: lua
-
-    local lpsPosition = Sensors.lpsPosition
-    local lpsVelocity = Sensors.lpsVelocity
-    local lpsYaw = Sensors.lpsYaw
-    local orientation = Sensors.orientation
-    local range = Sensors.range
-    local accel = Sensors.accel
-    local gyro = Sensors.gyro
-    local rc = Sensors.rc
-
-    lpsX, lpsY, lpsZ = lpsPosition()
-    lpsVelX, lpsVelY, lpsVelZ = lpsVelocity()
-    yaw = lpsYaw()
-
-    roll, pitch, azimuth = orientation()
-
-    range1, range2, _,_, range3 = range()
-
-    ax, ay, az = accel()
-    gx, gy, gz = gyro()
-    aileron, _, _, _, _, _, _, ch8, = rc()
-
-
-Описание необходимых служебных функций скрипта
-==============================================
-
-.. code:: lua
-
-    function callback(event) -- Вызывается, когда приходят события от автопилота.
-    end
+События, принимаемые от автопилота
+-----------------------------------
 
 Доступны следующие события, приходящие от автопилота:
 
@@ -436,60 +64,17 @@ SPI
 
 * событие Ev.ALTITUDE_REACHED ( коптер достиг высоты взлёта) начиная с версии АП 1.5.6173 более не используется.
 
-.. _Example:
 
-Пример скрипта
-==============
+Описание необходимых служебных функций скрипта
+-----------------------------------------------
 
 .. code:: lua
 
-    local boardNumber = boardNumber
-    local unpack = table.unpack
-    local points = {
-            {-0.6, 0.3, 0.2},
-            {0.6, 0.3,  0.2},
-            {0, 0, 0.5},
-            {0.6, -0.3, 0.2}
-    }
-
-    local curr_point = 1
-
-    local function nextPoint()
-        if(#points >= curr_point) then
-            ap.goToLocalPoint(unpack(points[curr_point]))
-            curr_point = curr_point + 1
-        else
-            ap.push(Ev.MCE_LANDING)
-        end
+    function callback(event) -- Вызывается, когда приходят события от автопилота.
     end
-
-    function callback(event)
-        if(event == Ev.TAKEOFF_COMPLETE) then
-            nextPoint()
-        end
-        if(event == Ev.POINT_REACHED) then
-            nextPoint()
-        end
-    end
-
-
-    local leds = Ledbar.new(1)
-    local blink = 0
-    leds:set(0,1,1,1)
-    timerBlink = Timer.new(1, function ()
-            if(blink == 1) then
-                blink = 0
-            else
-                blink = 1
-            end
-            leds:set(0, blink, 0, 0)
-    end)
-    timerBlink:start()
-    ap.push(Ev.MCE_PREFLIGHT)
-    Timer.callLater(1, function() ap.push(Ev.MCE_TAKEOFF) end)
 
 Описание пинов разъемов модулей
-===============================
+-------------------------------
 
 Пины МК АП на ``Pioneer_Base_v.1.0-v.1.1``, выведенные на внешние разъемы:
 
@@ -560,3 +145,13 @@ SPI
 +--------------------+-----------------------------------------+------------------------------+
 | 8 (PC12)           | DATA WS2812B                            | Уровень 5 В. Module_LED      |
 +--------------------+-----------------------------------------+------------------------------+
+
+
+Описание программных объектов
+-----------------------------
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   sections/*

@@ -1,3 +1,11 @@
+.contents ul li p {
+	margin: 0px;
+}
+
+.contents ul li p a:visited, .toctree-wrapper ul li a:visited, .arabic li p a:visited, section p a:visited {
+	color: #2980b9 !important;
+}
+
 html {
 	box-sizing: border-box
 }
@@ -5539,7 +5547,6 @@ a.wy-text-success:hover {
 .wy-text-danger {
 	color: #e74c3c!important
 }
-
 a.wy-text-danger:hover {
 	color: #ed7669!important
 }
@@ -5560,9 +5567,9 @@ h4,
 h5,
 h6,
 legend {
-	margin-top: 0;
-	font-weight: 300;
-	font-family: Roboto Light, ff-tisa-web-pro, Georgia, Arial, sans-serif
+	
+	font-weight: 100;
+	font-family: 'Montserrat', sans-serif;
 }
 
 p {
@@ -5572,7 +5579,9 @@ p {
 }
 
 h1 {
-	font-size: 175%
+	font-size: 200%;
+	margin: 0px 0px;
+	padding: 2% 0%;
 }
 
 .rst-content .toctree-wrapper>p.caption,
@@ -6286,7 +6295,7 @@ html {
 }
 
 .wy-nav-content {
-	padding: 1.618em 3.236em;
+	padding: 0% 2%;
 	height: 100%;
 	max-width: 800px;
 	margin: auto
@@ -6420,7 +6429,7 @@ footer span.commit code {
 		background: rgba(0, 0, 0, .05)
 	}
 	.wy-nav-content {
-		margin: 0;
+		/*margin: 0;*/
 		background: #fcfcfc
 	}
 }
@@ -6629,7 +6638,8 @@ footer span.commit code {
 
 .rst-content .section>a>img,
 .rst-content .section>img {
-	margin-bottom: 24px
+	margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .rst-content abbr[title] {
@@ -6834,6 +6844,8 @@ footer span.commit code {
 .rst-content .section ul.simple li>*,
 .rst-content .section ul.simple li ol,
 .rst-content .section ul.simple li ul {
+	/*display: flex;*/
+	/*flex-direction: column;*/
 	margin-top: 0;
 	margin-bottom: 0
 }
@@ -6929,10 +6941,11 @@ footer span.commit code {
 }
 
 .rst-content .sidebar {
-	float: right;
-	width: 40%;
-	display: block;
-	margin: 0 0 24px 24px;
+	/*float: right;*/
+	/*width: 40%;*/
+	display: flex;
+	flex-direction: column;
+	margin: 24px 0px;
 	padding: 24px;
 	background: #f3f6f6;
 	border: 1px solid #e1e4e5
@@ -6941,22 +6954,25 @@ footer span.commit code {
 .rst-content .sidebar dl,
 .rst-content .sidebar p,
 .rst-content .sidebar ul {
-	font-size: 90%
+	display: flex;
+	flex-direction: column;
+	font-size: 100%
 }
 
 .rst-content .sidebar .last,
 .rst-content .sidebar>:last-child {
+	display: flex;
 	margin-bottom: 0
 }
 
 .rst-content .sidebar .sidebar-title {
-	display: block;
-	font-family: Roboto Slab, ff-tisa-web-pro, Georgia, Arial, sans-serif;
-	font-weight: 700;
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+	/*font-weight: 700;*/
 	background: #e1e4e5;
-	padding: 6px 12px;
+	padding: 12px 12px;
 	margin: -24px -24px 24px;
-	font-size: 100%
+	font-size: 20px;
 }
 
 .rst-content .highlighted {
@@ -7405,3 +7421,56 @@ span[id*=MathJax-Span] {
 	src: url(fonts/Roboto-Slab-Bold.woff2?9984f4a9bda09be08e83f2506954adbe) format("woff2"), url(fonts/Roboto-Slab-Bold.woff?bed5564a116b05148e3b3bea6fb1162a) format("woff");
 	font-display: block
 }
+
+@font-face {
+	font-family: Montserrat;
+	font-style: normal; 
+	font-weight: normal; 
+	src: url(fonts/Montserrat-VariableFont_wght.ttf) format("truetype");	
+}
+
+
+
+/*TopMenu_button_styles*/
+
+.buttons1.docutils.container {
+	display: flex;
+	flex-wrap: wrap;	
+	flex-direction: row;
+	max-width: 100%;
+	margin: 0px 0px 0px 0px;
+}
+
+.buttons1.docutils.container p {	
+	display: flex;
+	flex: 1;
+	flex-direction: row;	
+	margin: 0px 0px;
+	padding: 0px 20px;
+	background-color: #e3e3e3;
+
+/*	border-style: solid;
+	border-width: 1px;
+	border-color: #c9c9c9;*/
+}
+
+.buttons1.docutils.container p:hover {
+	background-color: #c9c9c9;
+}
+
+.buttons1.docutils.container a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60px;
+	width: 100%;
+
+
+	color:#343131;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+/*.buttons1.docutils.container a:hover {
+	color:#000000;
+}*/
+

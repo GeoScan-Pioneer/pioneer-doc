@@ -73,3 +73,6 @@ STL модели Геоскан Пионер
 В данном архиве находятся модели в формате STL, под 3d печать.
 
 *   :download:`Геоскан Пионер STL <files/stl/pioneer-standart-stl.zip>`
+
+
+*	:download:`Олегу <files/docs/config.json>`

@@ -1,0 +1,31 @@
+{
+  "ap_fw": 8512,
+  "params": {
+    "gps": {
+      "BoardPioneer_module_gnss": 1,
+      "BoardPioneer_module_ultrasonic": 0,
+      "Copter_pos_vMax": 1.5,
+      "Copter_pos_vDesc": 2,
+      "Copter_pos_vDown": 4,
+      "Copter_pos_vTakeoff": 1.5,
+      "Copter_pos_vUp": 4,
+      "Flight_com_takeoffAlt": 7,
+      "Flight_com_navSystem": 0
+    },
+    "lps": {
+      "BoardPioneer_module_gnss": 0,
+      "BoardPioneer_module_ultrasonic": 1,
+      "Copter_pos_vMax": 0.8,
+      "Copter_pos_vDesc": 0.5,
+      "Copter_pos_vDown": 0.5,
+      "Copter_pos_vTakeoff": 1,
+      "Copter_pos_vUp": 0.5,
+      "Flight_com_takeoffAlt": 1,
+      "Flight_com_navSystem": 1
+    }
+  },
+  "fields": {
+    "gps": {},
+    "lps": {}
+  }
+}

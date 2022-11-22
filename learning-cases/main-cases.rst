@@ -9,7 +9,7 @@
 Образовательные методики
 ------------------------
 
-1. Методическое пособие 48 ч. Управление БПЛА. Основы аэрофотосъемки и аэрофотосъемки.
+1. Методическое пособие 48 ч. Управление БПЛА. Основы аэрофотосъемки и фотограмметрии.
 
 `Ссылка для скачивания. <https://yadi.sk/i/9CdnhsXGNzrKqA>`__
 
@@ -38,7 +38,7 @@
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Содержание:
 
    digital-level/digital-level-led
@@ -46,3 +46,5 @@
    parking-finder/parking_finder
    dev_protection_for_pioneer_mini/main_text
    modul_led/main_text
+   mailbox_led_receive/mailbox_led_receive
+   trik_control_pioneer/trik_control_pioneer

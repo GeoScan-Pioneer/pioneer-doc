@@ -71,7 +71,7 @@
             <div class="gallery-element">
                 <a href="./instructions/pioneer-standart/main-standart.html">
                     <div class="image"> <img src="_static/images/pioneer.png" > </div>
-                    <div class="head"> <p>Пионер Стандарт</p> </div>
+                    <div class="head"> <p>Пионер Базовый</p> </div>
                 </a>
             </div>
 

@@ -51,9 +51,9 @@ class TileDirective(Directive):
         # nested_parse_with_titles(self.state, rst, node)
         self.state.nested_parse(self.content, self.content_offset, node)
 
-        node['icon'] = self.options['icon']
-        node['head'] = self.options['head']
-        node['caption'] = self.options['caption']
+        node['icon'] = self.options['icon'] if 'icon' in self.options else " "
+        node['head'] = self.options['head'] if 'head' in self.options else " "
+        node['caption'] = self.options['caption'] if 'caption' in self.options else " "
         return [node]
 
 

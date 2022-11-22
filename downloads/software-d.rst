@@ -62,6 +62,8 @@ ______
 
 **Устаревшие:**
 
+* `Pioneer Mini 1.6.7747 <https://disk.yandex.ru/d/xdrsPzICMUQgPw>`__
+
 * `Pioneer Mini 1.6.7482 <https://disk.yandex.ru/d/2lt2YDFPGsik-w?w=1>`__
 
 * `Pioneer Mini 1.6.7257 <https://disk.yandex.ru/d/WPgcrfgPKFpHBg>`__
@@ -86,9 +88,11 @@ ______
 
 **Стабильные:**
 
-* ESPTOOL 2.0 с параметрами автопилота 0014 - `ESPTool 2.0 <https://disk.yandex.ru/d/rJ2pVA3T9UARLA>`__
+* ESPTOOL с прошивкой ESP 0.5.6 и параметрами автопилота 9202 - `ESPTool 0.5.6 <https://disk.yandex.ru/d/3IprqU238K4N_g>`__
 
 **Устаревшие:**
+
+* ESPTOOL с прошивкой ESP 0.4.5 и параметрами автопилота 0014 - `ESPTool 0.4.5 <https://disk.yandex.ru/d/ymscegzZ7uD4RA>`__
 
 * ESPTOOL с прошивкой ESP 0.2.5 и параметрами автопилота 0007 - `ESPTool 0.2.5 <https://disk.yandex.ru/d/oWXwX4rLs-Fucw>`__
 
@@ -102,6 +106,8 @@ _______
 **Стабильные:**
 
 * |fw_ap_max|
+
+* `Pioneer Max 1.6.7185 для ROS <https://drive.google.com/uc?export=download&confirm=no_antivirus&id=13Qm2YY8UcYd9dDmOfHSlHRpk7JiuzOxo>`_
 
 **Тестовые:**
 
@@ -119,6 +125,8 @@ _______
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Стабильные:**
+
+* `Параметры АП Pioneer Mini 1.0.9202 <https://disk.yandex.ru/d/fdTyvffNctHW3A>`__ (Для АП 1.6.9202 и новее)
 
 * `Параметры АП Pioneer Mini 1.0.0014 <https://disk.yandex.ru/d/LOHZoIZ45vNV2Q>`__ (Для АП 1.6.7747 и новее)
 
@@ -163,6 +171,7 @@ ______
 
 * `Параметры АП для Pioneer Max <https://disk.yandex.ru/d/IrWVG9xBmZaenw>`__ / Файл readme обязателен к прочтению!
 
+* `Параметры АП для Pioneer Max <https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1h7_B2DjN7hiN_PCSxYsdqPgXFBfr_AHK>`_
 
 **Тестовые:**
 
