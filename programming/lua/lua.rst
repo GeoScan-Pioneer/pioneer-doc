@@ -1,6 +1,3 @@
-Lua документация по API
-===========================
-
 .. contents:: Содержание:
    :depth: 1
    :local:
@@ -147,11 +144,32 @@ Lua документация по API
 +--------------------+-----------------------------------------+------------------------------+
 
 
-Описание программных объектов
------------------------------
+.. include:: sections/0000_general.rst
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
+.. include:: sections/0001_autopilot.rst
 
-   sections/*
+.. include:: sections/0002_leds.rst
+
+.. include:: sections/0003_gpio.rst
+
+.. include:: sections/0004_uart.rst
+
+.. include:: sections/0005_spi.rst
+
+.. include:: sections/0006_camera.rst
+
+.. include:: sections/0007_timer.rst
+
+.. include:: sections/0008_sensors.rst
+
+.. include:: sections/0009_mailbox.rst
+
+..
+    Описание программных объектов
+    -----------------------------
+
+    .. toctree::
+       :maxdepth: 1
+       :glob:
+
+       sections/*
