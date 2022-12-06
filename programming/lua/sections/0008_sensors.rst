@@ -1,57 +1,55 @@
 Объект Sensors | Получение данных от датчиков
-=============================================
+---------------------------------------------
 
 Для получение данных от автопилота используется класс Sensors
 
-.. class:: Sensors
+.. function:: Sensors.lpsPosition()
 
-    .. method:: lpsPosition()
+    :return: x, y, z
 
-        :return: x, y, z
+.. function:: Sensors.lpsVelocity()
 
-    .. method:: lpsVelocity()
+    :return: vx, vy, vz
 
-        :return: vx, vy, vz
+.. function:: Sensors.lpsYaw()
 
-    .. method:: lpsYaw()
+    :return: yaw
 
-        :return: yaw
+.. function:: Sensors.orientation()
 
-    .. method:: orientation()
+    Данные положения.
 
-        Данные положения.
+    :return: roll, pitch, azimuth
 
-        :return: roll, pitch, azimuth
+.. function:: Sensors.altitude()
 
-    .. method:: altitude()
+    Данные высоты по барометру.
 
-        Данные высоты по барометру.
+    :return: высота в метрах
 
-        :return: высота в метрах
+.. function:: Sensors.range()
 
-    .. method:: range()
+    Данные c датчиков расстояния.
 
-        Данные c датчиков расстояния.
+    :return: Возвращает значения с датчика расстояния. Возвращает несколько значений.
 
-        :return: Возвращает значения с датчика расстояния. Возвращает несколько значений.
+.. function:: Sensors.accel()
 
-    .. method:: accel()
+    Данные c акселерометра.
 
-        Данные c акселерометра.
+    :return: ax, ay, az
 
-        :return: ax, ay, az
+.. function:: Sensors.gyro()
 
-    .. method:: gyro()
+    Данные c гироскопа.
 
-        Данные c гироскопа.
+    :return: gx, gy, gz
 
-        :return: gx, gy, gz
+.. function:: Sensors.rc()
 
-    .. method:: rc()
+    Данные c пульта управления.
 
-        Данные c пульта управления.
-
-        :return: channel1, channel2, channel3, channel4, channel5, channel6, channel7, channel8
+    :return: channel1, channel2, channel3, channel4, channel5, channel6, channel7, channel8
 
 **Примеры**
 

@@ -1,35 +1,33 @@
 Объект GPIO | Управление пинами
-===============================
+--------------------------------
 
-.. class:: Gpio
+.. function:: Gpio.new(Port, Pin, Mode)
 
-    .. method:: new(Port, Pin, Mode)
+    Cоздать GPIO на порте с настройками.
 
-        Cоздать GPIO на порте с настройками.
+    :param Port: Gpio.A; Gpio.B; ... Gpio.E;
+    :param Pin: номер пина на порте;
+    :param Mode: Gpio.INPUT, Gpio.Output, Gpio.ALTFU.
 
-        :param Port: Gpio.A; Gpio.B; ... Gpio.E;
-        :param Pin: номер пина на порте;
-        :param Mode: Gpio.INPUT, Gpio.Output, Gpio.ALTFU.
+.. function:: Gpio.read(self)
 
-    .. method:: read(self)
+    Получить значение.
 
-        Получить значение.
+.. function:: Gpio.set(self)
 
-    .. method:: set(self)
+    Установить значение в 1.
 
-        Установить значение в 1.
+.. function:: Gpio.reset(self)
 
-    .. method:: reset(self)
+    Установить значение в 0.
 
-        Установить значение в 0.
+.. function:: Gpio.write(self, value)
 
-    .. method:: write(self, value)
+    :param value: установить значение.
 
-        :param value: установить значение.
+.. function:: Gpio.setFunction(self, num)
 
-    .. method:: setFunction(self, num)
-
-        Задать номер альтернативной функции.
+    Задать номер альтернативной функции.
 
 **Пример**
 

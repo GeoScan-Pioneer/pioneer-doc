@@ -23,7 +23,7 @@
 
 #. Как уже говорилось, установить две среды разработки
 #. Если у вас есть контроллер Трик - `обновить прошивку контроллера. <https://help.trikset.com/trik/firmware>`__
-#. Проверить версию прошивок квадрокоптера и при необходимости обновить прошивку автопилота `по инструкции <https://docs.geoscan.aero/ru/master/instructions/pioneer-mini/settings/firmware_upgrade.html>`__ и прошивку ESP32 `по инструкции. <https://docs.geoscan.aero/ru/master/instructions/pioneer-mini/settings/esp32-update.html>`__
+#. Проверить версию прошивок квадрокоптера и при необходимости обновить прошивку автопилота `по инструкции <../../instructions/pioneer-mini/settings/firmware_upgrade.html>`__ и прошивку ESP32 `по инструкции. <../../instructions/pioneer-mini/settings/esp32-update.html>`__
 
 `Скачать архив с прошивками автопилота и ESP32. <https://disk.yandex.ru/d/Bs1QOpgg-w9Y7A>`__
 
@@ -43,8 +43,8 @@
 Основные сведения по работе с протоколом Mailbox
 ------------------------------------------------
 
-Для понимания работы проекта следует ознакомиться с документацией `по объекту mailbox, <https://docs.geoscan.aero/ru/master/programming/lua/sections/0009_mailbox.html>`__
-а также с проектом по `приему закодированных сообщений. <https://docs.geoscan.aero/ru/master/learning-cases/mailbox_led_receive/mailbox_led_receive.html>`__
+Для понимания работы проекта следует ознакомиться с `документацией по протоколу mailbox, <../../programming/info-interfaces/pages/mailbox/mailbox.html>`__
+а также с `описанием api объекта mailbox. <../../programming/lua/sections/0009_mailbox.html>`__
 
 
 Код для квадрокоптера на Lua
