@@ -1,18 +1,18 @@
 Объект ap | Управление автопилотом
-==================================
+----------------------------------
 
 .. function:: ap.push(Event)
 
-   Добавить событие автопилоту (см. :ref:`outluaevent`).
+    Добавить событие автопилоту (см. :ref:`outluaevent`).
 
-   :param Event: номер события или название (например, ``Ev.COPTER_LANDED``).
+    :param Event: номер события или название (например, ``Ev.COPTER_LANDED``).
 
-**Пример**
+    **Пример**
 
-.. code-block:: lua
+    .. code-block:: lua
 
-    Ev.MCE_PREFLIGHT
-    ap.push(Ev.MCE_PREFLIGHT)
+        Ev.MCE_PREFLIGHT
+        ap.push(Ev.MCE_PREFLIGHT)
 
 .. function:: ap.goToPoint(latitude, longitude, altitude)
 
@@ -22,7 +22,11 @@
     :param longitude: задается долгота в градусах, умноженных на :math:`10^{-7}`;
     :param altitude: задается высота в метрах.
 
-    Пример `ap.goToPoint(60.0859810, 30.4206500, 50)`
+    **Пример**
+
+    .. code-block:: lua
+
+        ap.goToPoint(60.0859810, 30.4206500, 50)
 
 .. function:: ap.goToLocalPoint(x, y, z , time)
 
@@ -33,7 +37,13 @@
     :param z: задается координата точки по оси `z`, в метрах;
     :param time: время, за которое коптер перейдет в следующую точку, в секундах. Если значение не указано, коптер стремится к точке с максимальной скоростью.
 
-    Пример  ``ap.goToLocalPoint(1, 1, 1.2)`` или ``ap.goToLocalPoint(1, 1, 1.2, 10)``
+    **Пример**
+
+    .. code-block:: lua
+
+        ap.goToLocalPoint(1, 1, 1.2)
+        -- или
+        ap.goToLocalPoint(1, 1, 1.2, 10)
 
 .. function:: ap.updateYaw(angle)
 

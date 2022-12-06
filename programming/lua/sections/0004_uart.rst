@@ -1,9 +1,7 @@
 Объект UART | Управление UART
-=============================
+-----------------------------
 
-.. class:: Uart
-
-    .. method:: new(num, rate, parity, stopBits)
+    .. function:: Uart.new(num, rate, parity, stopBits)
 
         Cоздать Uart на порте с настройками.
 
@@ -12,19 +10,19 @@
         :param parity: Uart.PARITY_NONE, Uart.PARITY_EVEN, Uart.PARITY_ODD, необязательный параметр, по умолчанию Uart.PARITY_NONE;
         :param stopBits: Uart.ONE_STOP, Uart.TWO_STOP, необязательный параметр, по умолчанию Uart.ONE_STOP.
 
-    .. method:: read(self, size)
+    .. function:: Uart.read(self, size)
 
         Прочитать ``size`` байт.
 
-    .. method:: write(self, data, size)
+    .. function:: Uart.write(self, data, size)
 
         Записать данные (data) длиной (size).
 
-    .. method:: bytesToRead(self)
+    .. function:: Uart.bytesToRead(self)
 
         Количество данных доступных для чтения.
 
-    .. method:: setBaudRate(self, rate)
+    .. function:: Uart.setBaudRate(self, rate)
 
         Установить скорость.
 
