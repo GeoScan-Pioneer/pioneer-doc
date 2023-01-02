@@ -1,5 +1,5 @@
 :root {
-    --tile-height: 90px;
+    --tile-height: 80px;
 }
 
 .tile .toctree-wrapper.compound {
@@ -12,7 +12,7 @@
     box-shadow: 0px 2px 23px -15px rgba(0,0,0,20);
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 100px 210px minmax(0, 60px) 15px minmax(330px, auto);
+    grid-template-columns: 100px 300px minmax(0, 10px) 15px minmax(330px, auto);
     grid-template-rows: var(--tile-height) auto;
     height: var(--tile-height);
     align-items: center;
@@ -22,21 +22,38 @@
     transition-timing-function: ease-in-out;
 }
 
+.tile.no-image.no-any-text {
+    grid-template-columns: 100px auto;
+}
+
 .tile div {
     margin: 15px;
 }
 
-.tile p {
+.tile p,
+.tile .spacer{
     margin: 0px;
-    transition-property: color;
+    transition-property: color, transform;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
     color: black;
 }
 
+.tile .header p,
+.tile .caption p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
 .tile.large .header p,
-.tile.large .caption p {
+.tile.large .caption p,
+.tile.large .spacer {
     color: #E15D2B;
+}
+
+.tile.large .spacer {
+    transform: rotate(90deg);
 }
 
 .tile hr {
@@ -87,21 +104,38 @@
 
 
 .tile:hover .header p,
-.tile:hover .caption p {
+.tile:hover .caption p,
+.tile:hover .spacer {
     color: #E15D2B;
 }
 
 .tile:hover hr {
     background-color: #E15D2B;
 }
+
+.tile .spacer {
+    text-align: center;
+}
+
 @media (max-width: 1100px) {
     .tile {
         grid-template-columns: minmax(120px, 190px) 15px minmax(185px, auto);
     }
-
     .tile .caption,
     .tile .spacer {
         display: none;
+    }
+
+
+    .tile.no-image {
+        grid-template-columns: minmax(50px, 100px) 15px minmax(185px, auto);
+    }
+    .tile.no-image .spacer {
+        display: block;
+    }
+
+    .tile.no-image.no-any-text {
+        grid-template-columns: minmax(50px, 100px) auto;
     }
 
     .tile hr {
