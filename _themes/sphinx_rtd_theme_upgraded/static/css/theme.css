@@ -162,7 +162,7 @@ img {
 	border: 0;
 	-ms-interpolation-mode: bicubic;
 	vertical-align: middle;
-	max-width: 100%
+	max-width: 100%;
 }
 
 svg:not(:root) {
@@ -7195,11 +7195,11 @@ a .rst-content tt {
 }
 
 .rst-content dl {
-	margin-bottom: 24px
+	margin-bottom: 12px
 }
 
 .rst-content dl dt {
-	font-weight: 700;
+	/*font-weight: 700;*/
 	margin-bottom: 12px
 }
 
@@ -7207,7 +7207,7 @@ a .rst-content tt {
 .rst-content dl p,
 .rst-content dl table,
 .rst-content dl ul {
-	margin-bottom: 12px
+	/*margin-bottom: 12px*/
 }
 
 .rst-content dl dd {
