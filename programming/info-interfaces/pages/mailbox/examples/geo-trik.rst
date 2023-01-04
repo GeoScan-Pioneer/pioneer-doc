@@ -37,7 +37,7 @@
     sleep(0.1)
 
     data,_,_,_,_ = Sensors.range();
-    mailbox.send(42, data);
+    mailbox.send(1, data);
 
 Код для контроллера Трик на JS:
 
