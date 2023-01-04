@@ -13,10 +13,13 @@
     border-radius: 10px;
     display: grid;
     grid-template-columns: 100px 300px minmax(0, 10px) 15px minmax(330px, auto);
+    /*grid-template-rows: var(--tile-height) auto;*/     /*параметр устанавливается внутри html директивой tile */
+    /*height: var(--tile-height);*/                      /*параметр устанавливается внутри html директивой tile */
     grid-template-rows: var(--tile-height) auto;
     height: var(--tile-height);
     align-items: center;
     overflow: hidden;
+    overflow-x: clip;
     transition-property: height;
     transition-duration: 400ms;
     transition-timing-function: ease-in-out;
@@ -28,6 +31,14 @@
 
 .tile div {
     margin: 15px;
+}
+
+.tile .header,
+.tile .caption {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .tile p,
@@ -77,9 +88,9 @@
 }
 
 .tile .image {
-    width: 65px;
-    min-width: 65px;
-    max-width: 65px;
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
     margin: 0;
     justify-self: center;
     align-self: center;

@@ -17,7 +17,9 @@ def visit_tile(self, node):
     if node['head'] is None or node['caption'] is None:
         template += ' no-any-text'
 
-    template += '">'
+    template += f'"style="grid-template-rows: {node["hpx"]}px; height: {node["hpx"]}px">'
+    # template += '">'
+
 
     if node['icon'] is not None:
         ins = node['icon']
@@ -57,7 +59,8 @@ class TileDirective(Directive):
     option_spec = {
         'icon': directives.unchanged,
         'head': directives.unchanged,
-        'caption': directives.unchanged
+        'caption': directives.unchanged,
+        'hpx': directives.unchanged
     }
 
     has_content = True
@@ -79,6 +82,7 @@ class TileDirective(Directive):
         node['icon'] = self.options['icon'] if 'icon' in self.options else None
         node['head'] = self.options['head'] if 'head' in self.options else None
         node['caption'] = self.options['caption'] if 'caption' in self.options else None
+        node['hpx'] = self.options['hpx'] if 'hpx' in self.options else 80
         return [node]
 
 
