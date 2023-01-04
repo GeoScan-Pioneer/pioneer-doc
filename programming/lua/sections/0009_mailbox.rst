@@ -81,3 +81,6 @@
         .. code:: lua
 
             mailbox.setHullNumber(12)
+
+
+**Дополнительные примеры программ** можно посмотреть на странице с `описанием протокола mailbox <../../programming/info-interfaces/pages/mailbox/mailbox.html#id4>`__
