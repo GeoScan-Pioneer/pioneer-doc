@@ -1,86 +1,86 @@
 Объект mailbox | Беспроводная передача сообщений
 ------------------------------------------------
 
-.. function:: mailbox.connect(ip, port)
+    .. function:: mailbox.connect(ip, port)
 
-    Инициализация подключения к устройству с заданным адресом и портом
+        Инициализация подключения к устройству с заданным адресом и портом
 
-    :param ip: str - ip адрес устройства назначения
-    :param port: num - порт устройства назначения, рекомендуется использовать 8889
+        :param ip: str - ip адрес устройства назначения
+        :param port: num - порт устройства назначения, рекомендуется использовать 8889
 
-    **Пример**
+        **Пример**
 
-        .. code:: lua
+            .. code:: lua
 
-            hull, message = mailbox.connect("192.168.0.100", 8889)
-
-
-.. function:: mailbox.hasMessages()
-
-    Проверяет, есть ли пришедшие сообщения
-
-    :return: bool - есть ли пришедшие сообщения
-
-    **Пример**
-
-        .. code:: lua
-
-            has_mes = mailbox.hasMessages()
+                hull, message = mailbox.connect("192.168.0.100", 8889)
 
 
-.. function:: mailbox.myHullNumber()
+    .. function:: mailbox.hasMessages()
 
-    Возвращает текущий бортномер устройства
+        Проверяет, есть ли пришедшие сообщения
 
-    :return: num - бортномер устройства
+        :return: bool - есть ли пришедшие сообщения
 
-    **Пример**
+        **Пример**
 
-        .. code:: lua
+            .. code:: lua
 
-            my_hull = mailbox.myHullNumber()
-
-
-.. function:: mailbox.receive(blocking)
-
-    Считывание одного байта
-
-    :param blocking: true|false - блокирование выполнения программы, при true ожидает получения сообщения, при false - возвращает сообщение из буфера или -1, если сообщений нет.
-    :return: hull - бортномер отправителя, message - сообщение
-
-    **Пример**
-
-        .. code:: lua
-
-            hull, message = mailbox.receive(true)
+                has_mes = mailbox.hasMessages()
 
 
-.. function:: mailbox.send(hull, message)
+    .. function:: mailbox.myHullNumber()
 
-    Отправка сообщения
+        Возвращает текущий бортномер устройства
 
-    :param hull: num - бортномер устройства, которому отправляется сообщение, если hull < 0, то сообщение отправится всем известным устроствам
-    :param message: num|str - сообщение для отправки
+        :return: num - бортномер устройства
 
-    **Пример**
+        **Пример**
 
-        .. code:: lua
+            .. code:: lua
 
-            mailbox.send(42, "Hello Username")
-            mailbox.send(-1, "Hello World")
+                my_hull = mailbox.myHullNumber()
 
 
-.. function:: mailbox.setHullNumber(hull)
+    .. function:: mailbox.receive(blocking)
 
-    Устанавливает новый бортномер для устройства, перезаписывается параметр Trik_hullNum
+        Считывание одного байта
 
-    :param hull: num - новый бортномер
+        :param blocking: true|false - блокирование выполнения программы, при true ожидает получения сообщения, при false - возвращает сообщение из буфера или -1, если сообщений нет.
+        :return: hull - бортномер отправителя, message - сообщение
 
-    **Пример**
+        **Пример**
 
-        .. code:: lua
+            .. code:: lua
 
-            mailbox.setHullNumber(12)
+                hull, message = mailbox.receive(true)
 
 
-**Дополнительные примеры программ** можно посмотреть на странице с `описанием протокола mailbox <../../programming/info-interfaces/pages/mailbox/mailbox.html#id4>`__
+    .. function:: mailbox.send(hull, message)
+
+        Отправка сообщения
+
+        :param hull: num - бортномер устройства, которому отправляется сообщение, если hull < 0, то сообщение отправится всем известным устроствам
+        :param message: num|str - сообщение для отправки
+
+        **Пример**
+
+            .. code:: lua
+
+                mailbox.send(42, "Hello Username")
+                mailbox.send(-1, "Hello World")
+
+
+    .. function:: mailbox.setHullNumber(hull)
+
+        Устанавливает новый бортномер для устройства, перезаписывается параметр Trik_hullNum
+
+        :param hull: num - новый бортномер
+
+        **Пример**
+
+            .. code:: lua
+
+                mailbox.setHullNumber(12)
+
+
+    **Дополнительные примеры программ** можно посмотреть на странице с `описанием протокола mailbox <../../programming/info-interfaces/pages/mailbox/mailbox.html#id4>`__

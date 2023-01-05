@@ -29,9 +29,9 @@
         :param rate: скорость uart.
 
 
-**Пример**
+    **Пример**
 
-.. code:: lua
+    .. code:: lua
 
-    local uart = Uart.new(1, 115200)
-    uart:read(10) -- прочитать 10 байт
+        local uart = Uart.new(1, 115200)
+        uart:read(10) -- прочитать 10 байт

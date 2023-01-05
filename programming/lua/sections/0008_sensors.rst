@@ -1,77 +1,77 @@
 Объект Sensors | Получение данных от датчиков
 ---------------------------------------------
 
-Для получение данных от автопилота используется класс Sensors
+    Для получение данных от автопилота используется класс Sensors
 
-.. function:: Sensors.lpsPosition()
+    .. function:: Sensors.lpsPosition()
 
-    :return: x, y, z
+        :return: x, y, z
 
-.. function:: Sensors.lpsVelocity()
+    .. function:: Sensors.lpsVelocity()
 
-    :return: vx, vy, vz
+        :return: vx, vy, vz
 
-.. function:: Sensors.lpsYaw()
+    .. function:: Sensors.lpsYaw()
 
-    :return: yaw
+        :return: yaw
 
-.. function:: Sensors.orientation()
+    .. function:: Sensors.orientation()
 
-    Данные положения.
+        Данные положения.
 
-    :return: roll, pitch, azimuth
+        :return: roll, pitch, azimuth
 
-.. function:: Sensors.altitude()
+    .. function:: Sensors.altitude()
 
-    Данные высоты по барометру.
+        Данные высоты по барометру.
 
-    :return: высота в метрах
+        :return: высота в метрах
 
-.. function:: Sensors.range()
+    .. function:: Sensors.range()
 
-    Данные c датчиков расстояния.
+        Данные c датчиков расстояния.
 
-    :return: Возвращает значения с датчика расстояния. Возвращает несколько значений.
+        :return: Возвращает значения с датчика расстояния. Возвращает несколько значений.
 
-.. function:: Sensors.accel()
+    .. function:: Sensors.accel()
 
-    Данные c акселерометра.
+        Данные c акселерометра.
 
-    :return: ax, ay, az
+        :return: ax, ay, az
 
-.. function:: Sensors.gyro()
+    .. function:: Sensors.gyro()
 
-    Данные c гироскопа.
+        Данные c гироскопа.
 
-    :return: gx, gy, gz
+        :return: gx, gy, gz
 
-.. function:: Sensors.rc()
+    .. function:: Sensors.rc()
 
-    Данные c пульта управления.
+        Данные c пульта управления.
 
-    :return: channel1, channel2, channel3, channel4, channel5, channel6, channel7, channel8
+        :return: channel1, channel2, channel3, channel4, channel5, channel6, channel7, channel8
 
-**Примеры**
+    **Примеры**
 
-.. code:: lua
+    .. code:: lua
 
-    local lpsPosition = Sensors.lpsPosition
-    local lpsVelocity = Sensors.lpsVelocity
-    local lpsYaw = Sensors.lpsYaw
-    local orientation = Sensors.orientation
-    local range = Sensors.range
-    local accel = Sensors.accel
-    local gyro = Sensors.gyro
-    local rc = Sensors.rc
+        local lpsPosition = Sensors.lpsPosition
+        local lpsVelocity = Sensors.lpsVelocity
+        local lpsYaw = Sensors.lpsYaw
+        local orientation = Sensors.orientation
+        local range = Sensors.range
+        local accel = Sensors.accel
+        local gyro = Sensors.gyro
+        local rc = Sensors.rc
 
-    lpsX, lpsY, lpsZ = lpsPosition()
-    lpsVelX, lpsVelY, lpsVelZ = lpsVelocity()
-    yaw = lpsYaw()
+        lpsX, lpsY, lpsZ = lpsPosition()
+        lpsVelX, lpsVelY, lpsVelZ = lpsVelocity()
+        yaw = lpsYaw()
 
-    roll, pitch, azimuth = orientation()
+        roll, pitch, azimuth = orientation()
 
-    range1, range2, _,_, range3 = range()
+        range1, range2, _,_, range3 = range()
 
-    ax, ay, az = accel()
-    gx, gy, gz = gyro()
-    aileron, _, _, _, _, _, _, ch8, = rc()
+        ax, ay, az = accel()
+        gx, gy, gz = gyro()
+        aileron, _, _, _, _, _, _, ch8, = rc()
